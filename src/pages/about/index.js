@@ -7,8 +7,10 @@ import {
   meta,
   worktimeline,
   skills,
-  services,
+  languages,
+  other_interests,
 } from "../../content_option";
+import StarRating from "../../components/starBar";
 
 export const About = () => {
   return (
@@ -37,7 +39,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Recent Projects</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -60,35 +62,41 @@ export const About = () => {
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            {skills.map((data, i) => (
+              <div key={i}>
+                <h3 className="progress-title">
+                  {data.name}
+                  <StarRating fullStars={data.value} />
+                </h3>
+              </div>
+            ))}
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Languages</h3>
+          </Col>
+          <Col lg="7">
+            {languages.map((data, i) => (
+              <div key={i}>
+                <h3 className="progress-title">
+                  {data.name}
+                  <StarRating fullStars={data.value} />
+                </h3>
+              </div>
+            ))}
           </Col>
         </Row>
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+            <h3 className="color_sec py-4">Other Interests</h3>
           </Col>
           <Col lg="7">
-            {services.map((data, i) => {
+            {other_interests.map((data, i) => {
               return (
                 <div className="service_ py-4" key={i}>
                   <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
+                  <p>{data.description}</p>
                 </div>
               );
             })}

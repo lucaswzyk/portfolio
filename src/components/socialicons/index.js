@@ -7,52 +7,60 @@ import {
   FaLinkedin,
   FaYoutube,
   FaTwitch,
+  FaInstagram,
 } from "react-icons/fa";
-import { socialprofils } from "../../content_option";
+import { socialprofiles } from "../../content_option";
 
 export const Socialicons = (params) => {
   return (
     <div className="stick_follow_icon">
       <ul>
-        {socialprofils.twitter && (
+        {socialprofiles.twitter && (
           <li>
-            <a href={socialprofils.twitter}>
+            <a href={socialprofiles.twitter}>
               <FaTwitter />
             </a>
           </li>
         )}
-        {socialprofils.github && (
+        {socialprofiles.github && (
           <li>
-            <a href={socialprofils.github}>
+            <a href={socialprofiles.github}>
               <FaGithub />
             </a>
           </li>
         )}
-        {socialprofils.facebook && (
+        {socialprofiles.facebook && (
           <li>
-            <a href={socialprofils.facebook}>
+            <a href={socialprofiles.facebook}>
               <FaFacebookF />
             </a>
           </li>
         )}
-        {socialprofils.linkedin && (
+        {socialprofiles.linkedin && (
           <li>
-            <a href={socialprofils.linkedin}>
+            <a href={socialprofiles.linkedin}>
               <FaLinkedin />
             </a>
           </li>
         )}
-        {socialprofils.youtube && (
+        {socialprofiles.youtube && (
           <li>
-            <a href={socialprofils.youtube}>
+            <a href={socialprofiles.youtube}>
               <FaYoutube />
             </a>
           </li>
         )}
-        {socialprofils.twitch && (
+        {socialprofiles.twitch && (
           <li>
-            <a href={socialprofils.twitch}>
+            <a href={socialprofiles.twitch}>
               <FaTwitch />
+            </a>
+          </li>
+        )}
+        {socialprofiles.insta && (
+          <li>
+            <a href={socialprofiles.twitch}>
+              <FaInstagram />
             </a>
           </li>
         )}
