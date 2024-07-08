@@ -1,32 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
-import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
-import { logotext, socialprofiles } from "../content_option";
-import Themetoggle from "../components/themetoggle";
+import { logotext } from "../content_option";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
-
-  const handleToggle = () => {
-    setActive(!isActive);
-    document.body.classList.toggle("ovhidden");
+  const handleLogoClick = () => {
+    window.location.href = "/";
   };
 
   return (
-    <>
-      <header className="fixed-top site__header">
-        <div className="d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" to="/">
-            {logotext}
-          </Link>
-        </div>
-      </header>
-      <div className="br-top"></div>
-      <div className="br-bottom"></div>
-      <div className="br-left"></div>
-      <div className="br-right"></div>
-    </>
+    <header className="fixed-top site__header">
+      <div className="d-flex align-items-center justify-content-between">
+        <a href="/" className="navbar-brand nav_ac" onClick={handleLogoClick}>
+          {logotext}
+        </a>
+      </div>
+    </header>
   );
 };
 
