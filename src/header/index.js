@@ -4,13 +4,17 @@ import { logotext } from "../content_option";
 
 const Headermain = () => {
   const handleLogoClick = () => {
-    window.location.href = "/";
+    window.location.href = "/portfolio";
   };
 
   return (
     <header className="fixed-top site__header">
       <div className="d-flex align-items-center justify-content-between">
-        <a href="/" className="navbar-brand nav_ac" onClick={handleLogoClick}>
+        <a
+          href="/portfolio"
+          className="navbar-brand nav_ac"
+          onClick={handleLogoClick}
+        >
           {logotext}
         </a>
       </div>
