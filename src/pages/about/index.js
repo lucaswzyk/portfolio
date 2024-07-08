@@ -16,11 +16,6 @@ export const About = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title> About | {meta.title}</title>
-          <meta name="description" content={meta.description} />
-        </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="12">
             <h1 className="display-4 mb-4">About me</h1>
