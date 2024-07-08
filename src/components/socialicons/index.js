@@ -59,7 +59,7 @@ export const Socialicons = (params) => {
         )}
         {socialprofiles.insta && (
           <li>
-            <a href={socialprofiles.twitch}>
+            <a href={socialprofiles.insta}>
               <FaInstagram />
             </a>
           </li>

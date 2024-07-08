@@ -160,6 +160,7 @@ const contactConfig = {
 const socialprofiles = {
   insta: "https://instagram.com/lucaswzyk",
 };
+
 export {
   meta,
   dataabout,
