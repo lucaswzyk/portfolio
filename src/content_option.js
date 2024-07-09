@@ -19,11 +19,11 @@ const introdata = {
 
 const dataabout = {
   title: "Das Woher und Wohin meines Umgetriebenseins",
-  aboutme: `Schon von klein auf war ich ein Performer im Herzen. Aufgewachsen habe ich mich auf Musik, insbesondere Gesang, konzentriert. In einem Internat mit starkem Fokus auf Gesangsausbildung erhielt ich eine Ausbildung in klassischem und Musical-Theater-Gesang, Klavier, Dirigieren, Musikgeschichte und -theorie. Meine Leidenschaft für die Schauspielerei begann während eines Schüleraustauschjahres in Florida, USA. Obwohl ich keine formale Film- oder Theaterschule besucht habe, habe ich kontinuierlich Privatunterricht genommen und durch praktische Erfahrungen in verschiedenen Projekten gelernt.
+  aboutme: `Schon von klein auf war ich ein Performer. Zuerst habe ich mich auf Musik, insbesondere Gesang, konzentriert. In einem Internat mit vokalem Fokus erhielt ich eine Ausbildung in klassischem und Musiktheater-Gesang, Klavier, Dirigieren, Musikgeschichte und -theorie. Meine Leidenschaft für das Schauspiel begann während eines Schüleraustauschjahres in Florida, USA. Obwohl ich keine Film- oder Theaterschule besucht habe, habe ich kontinuierlich Privatunterricht genommen und durch praktische Erfahrungen in verschiedenen Projekten gelernt.
 
-  Neben meiner Liebe zur Kunst war ich schon immer leidenschaftlich an Technologie, insbesondere Software, interessiert. Dieses duale Interesse führte mich zu Abschlüssen in Informatik und Mathematik, die mir die Freiheit geben, meine künstlerischen Projekte basierend auf echter Leidenschaft auszuwählen. Die Arbeit als Softwareentwickler ermöglicht es mir, innovative und experimentelle Projekte zu erkunden, zuletzt im Bereich der künstlichen Intelligenz.
+  Neben meiner Liebe zur Kunst war ich schon immer leidenschaftlich an Technologie, insbesondere Software, interessiert. Dieses Interesse führte mich zu Abschlüssen in Informatik und Mathematik, die mir die Freiheit geben, meine künstlerischen Projekte basierend auf echter Leidenschaft auszuwählen. Die Arbeit als Softwareentwickler ermöglicht es mir, innovative und experimentelle Projekte zu erkunden, zuletzt im Bereich der künstlichen Intelligenz.
 
-  Vor drei Jahren bin ich nach Berlin gezogen, um Filmemachen zu verfolgen. Seitdem war ich an mehreren Arthouse-Projekten beteiligt und habe meine eigenen Ideen verwirklicht. Jetzt suche ich eine Vertretung durch eine Schauspielagentur, um meine Karriere auf die nächste Stufe zu heben.`,
+  Vor drei Jahren bin ich nach Berlin gezogen, um das Filmemachen zu verfolgen. Seitdem war ich an mehreren Arthouse-Projekten beteiligt und habe meine eigenen Ideen verwirklicht. Jetzt suche ich eine Vertretung durch eine Schauspielagentur, um meine Karriere auf die nächste Stufe zu heben.`,
 };
 const worktimeline = [
   {
@@ -96,14 +96,14 @@ const languages = [
 const other_interests = [
   {
     title: "Technologie und Mathematik",
-    description: `Dies war von klein auf meine andere Leidenschaft, und ich habe es zu meinem Beruf gemacht. Es gewährt mir auch einen einzigartigen Blick auf die technischen Aspekte von Projekten und die Entwicklung des Geschäfts.
+    description: `Das war von klein auf meine andere Leidenschaft, und ich habe es zu meinem Beruf gemacht. Es gewährt mir auch einen einzigartigen Blick auf die technischen Aspekte von Projekten und die Entwicklung der Branche.
 
     Um die Frage vorwegzunehmen: Trek, nicht Wars.`,
   },
   {
     title: "Sport und Bodybuilding",
     description:
-      "Routinen, um gesund zu bleiben und in Form zu bleiben, sind in meinen Tagesablauf eingebaut. Sie werden mich mindestens viermal pro Woche im Fitnessstudio finden, und ich gehe häufig laufen oder fahre Fahrrad. Tanzen und Dehnen halten mich flexibel.",
+      "Mein Tagesablauf enthält feste Routinen, um gesund und in Form zu bleiben. Man trifft mich mindestens viermal pro Woche im Fitnessstudio, und ich gehe häufig laufen oder fahre Fahrrad. Tanzen und Dehnen halten mich flexibel.",
   },
   {
     title: "Philosophie und Lebensstil",
@@ -111,14 +111,14 @@ const other_interests = [
       "Was ist gut? Was ist richtig? Was soll sein und gibt es Dinge, die sein sollen? Wie sollten wir einander begegnen? Wie kann ich mein bestes Selbst werden? Das Ziel: besser zu sein, als ich bin.",
   },
   {
-    title: "Produzieren, Regie führen und Editieren",
+    title: "Produktion, Regie und Schnitt",
     description:
       "So sehr ich es liebe, auf der Bühne und vor der Kamera zu stehen, habe ich erkannt, dass ich ziemlich gut darin bin, meine eigenen Ideen zum Leben zu erwecken. Bisher waren dies meist Experimente, aber derzeit verfeinere ich zwei vielversprechende Ideen für den kommerziellen Gebrauch.",
   },
   {
     title: "Reisen",
     description:
-      "Mein Beruf ermöglicht es mir, viel in Deutschland zu reisen, und ich reise häufig ins Ausland. Mindestens einmal im Jahr mache ich eine Fahrradtour mit Freunden, nur mit unseren Taschen, wir treffen neue Leute und sehen atemberaubende Landschaften. Bisher waren wir in 14 Ländern.",
+      "Mein Day Job ermöglicht es mir, viel in Deutschland zu reisen, und ich fahre privat oft ins Ausland. Mindestens einmal im Jahr mache ich eine Fahrradtour mit Freunden. Wir leben aus der Radtasche, treffen neue Leute und sehen atemberaubende Landschaften. Bisher waren wir schon in 14 Ländern.",
   },
 ];
 

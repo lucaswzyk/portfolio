@@ -30,7 +30,7 @@ export const Gallery = () => {
       <Container className="About-header">
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="12">
-            <h1 className="display-4 mb-4">Gallerie</h1>
+            <h1 className="display-4 mb-4">Galerie</h1>
             <hr className="separator-line" />
           </Col>
         </Row>

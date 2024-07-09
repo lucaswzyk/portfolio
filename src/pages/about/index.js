@@ -43,6 +43,8 @@ export const About = () => {
               Spielalter: 24-36
               <br />
               Wohnort: Berlin
+              <br />
+              Führerschein: Klasse B
             </p>
           </Col>
         </Row>
