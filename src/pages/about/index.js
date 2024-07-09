@@ -18,8 +18,32 @@ export const About = () => {
       <Container className="About-header">
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="12">
-            <h1 className="display-4 mb-4">About me</h1>
+            <h1 className="display-4 mb-4">Über mich</h1>
             <hr className="separator-line" />
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Informationen</h3>
+          </Col>
+          <Col lg="7">
+            <p>
+              Blond
+              <br />
+              Blaue Augen
+              <br />
+              1,96 m<br />
+              Muskulös
+              <br />
+              <br />
+              Geburtsjahr 1998
+              <br />
+              Nationalität: Deutsch
+              <br />
+              Spielalter: 24-36
+              <br />
+              Wohnort: Berlin
+            </p>
           </Col>
         </Row>
         <Row className="sec_sp">
@@ -32,9 +56,9 @@ export const About = () => {
             </div>
           </Col>
         </Row>
-        <Row className=" sec_sp">
+        <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Recent Projects</h3>
+            <h3 className="color_sec py-4">Letzte Projekte</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -54,7 +78,7 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Skills</h3>
+            <h3 className="color_sec py-4">Fähigkeiten</h3>
           </Col>
           <Col lg="7">
             {skills.map((data, i) => (
@@ -69,7 +93,7 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Languages</h3>
+            <h3 className="color_sec py-4">Sprachen</h3>
           </Col>
           <Col lg="7">
             {languages.map((data, i) => (
@@ -84,7 +108,7 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">Other Interests</h3>
+            <h3 className="color_sec py-4">Interessen</h3>
           </Col>
           <Col lg="7">
             {other_interests.map((data, i) => {

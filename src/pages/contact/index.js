@@ -69,7 +69,7 @@ export const ContactUs = () => {
       <Container>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="12">
-            <h1 className="display-4 mb-4">Contact Me</h1>
+            <h1 className="display-4 mb-4">Kontakt</h1>
             <hr className="separator-line" />
           </Col>
         </Row>
@@ -88,7 +88,9 @@ export const ContactUs = () => {
             </Alert>
           </Col>
           <Col lg="5" className="mb-5">
-            <h3 className="color_sec py-4">Get in touch</h3>
+            <h3 className="color_sec py-4">
+              Ich freue mich, von dir zu hören.
+            </h3>
             <address>
               <strong>Email:</strong>{" "}
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
@@ -98,7 +100,7 @@ export const ContactUs = () => {
               <br />
               {contactConfig.hasOwnProperty("YOUR_FONE") ? (
                 <p>
-                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+                  <strong>Mobil:</strong> {contactConfig.YOUR_FONE}
                 </p>
               ) : (
                 ""
@@ -138,7 +140,7 @@ export const ContactUs = () => {
                 className="form-control rounded-0"
                 id="message"
                 name="message"
-                placeholder="Message"
+                placeholder="Nachricht"
                 rows="5"
                 value={formData.message}
                 onChange={handleChange}
@@ -148,7 +150,7 @@ export const ContactUs = () => {
               <Row>
                 <Col lg="12" className="form-group">
                   <button className="btn ac_btn" type="submit">
-                    {formData.loading ? "Sending..." : "Send"}
+                    {formData.loading ? "Senden..." : "Senden"}
                   </button>
                 </Col>
               </Row>

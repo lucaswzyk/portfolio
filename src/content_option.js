@@ -1,51 +1,51 @@
-const logotext = "HOME";
+const logotext = "STARTSEITE";
 const meta = {
   title: "Lucas Waclawczyk",
   description:
-    "I’m Lucas Waclawczyk _ actor, singer, editor, director, producer, currently working in Berlin",
+    "Ich bin Lucas Waclawczyk - Schauspieler, Sänger, Editor, Regisseur, Produzent, derzeit in Berlin tätig",
 };
 
 const introdata = {
   title: "Lucas Waclawczyk",
   animated: {
-    first: "I combine tech and art.",
-    second: "I am a passionate musician.",
-    third: "I develop stories and shows.",
+    first: "kombiniert Technik und Kunst.",
+    second: "ist leidenschaftlicher Musiker.",
+    third: "entwickelt Geschichten und Shows.",
   },
   description:
-    "Actor, singer, director, producer, editor, currently working in Berlin",
-  your_img_url: "https://i.postimg.cc/Hs40xFwT/2-C3-A5068-2.jpg",
+    "Schauspieler, Sänger, Regisseur, Produzent, Editor, derzeit in Berlin tätig",
+  your_img_url: "https://i.postimg.cc/52zVLqt9/2-C3-A5215-2.jpg",
 };
 
 const dataabout = {
-  title: "A Bit About Myself",
-  aboutme: `From an early age, I have been a performer at heart. Growing up, I focused on music, especially singing. At a boarding school with a strong emphasis on vocal training, I received education in classical and musical theatre singing, piano, conducting, music history, and theory. My passion for acting began during a student exchange year in Florida, USA. Although I haven't attended a formal film or theatre school, I have continuously taken private lessons and learned through hands-on experience in various projects.
-    
-  In addition to my love for the arts, I have always been passionate about technology, particularly software. This dual interest led me to pursue degrees in computer science and mathematics, which has given me the freedom to choose my artistic projects based on genuine passion. Working as a software developer allows me to explore innovative and experimental projects, most recently involving artificial intelligence.
-    
-  Three years ago, I moved to Berlin to pursue filmmaking. Since then, I have been involved in several arthouse projects and brought my own ideas to life. Now, I am seeking representation with an actor's agency to elevate my career to the next level.`,
+  title: "Das Woher und Wohin meines Umgetriebenseins",
+  aboutme: `Schon von klein auf war ich ein Performer im Herzen. Aufgewachsen habe ich mich auf Musik, insbesondere Gesang, konzentriert. In einem Internat mit starkem Fokus auf Gesangsausbildung erhielt ich eine Ausbildung in klassischem und Musical-Theater-Gesang, Klavier, Dirigieren, Musikgeschichte und -theorie. Meine Leidenschaft für die Schauspielerei begann während eines Schüleraustauschjahres in Florida, USA. Obwohl ich keine formale Film- oder Theaterschule besucht habe, habe ich kontinuierlich Privatunterricht genommen und durch praktische Erfahrungen in verschiedenen Projekten gelernt.
+
+  Neben meiner Liebe zur Kunst war ich schon immer leidenschaftlich an Technologie, insbesondere Software, interessiert. Dieses duale Interesse führte mich zu Abschlüssen in Informatik und Mathematik, die mir die Freiheit geben, meine künstlerischen Projekte basierend auf echter Leidenschaft auszuwählen. Die Arbeit als Softwareentwickler ermöglicht es mir, innovative und experimentelle Projekte zu erkunden, zuletzt im Bereich der künstlichen Intelligenz.
+
+  Vor drei Jahren bin ich nach Berlin gezogen, um Filmemachen zu verfolgen. Seitdem war ich an mehreren Arthouse-Projekten beteiligt und habe meine eigenen Ideen verwirklicht. Jetzt suche ich eine Vertretung durch eine Schauspielagentur, um meine Karriere auf die nächste Stufe zu heben.`,
 };
 const worktimeline = [
   {
-    jobtitle: "Creator, Director, Showmaster",
-    where: "lean_art (artist collective)",
-    date: "2022 - today",
+    jobtitle: "Ersteller, Regisseur, Showmaster",
+    where: "lean_art (Künstlerkollektiv)",
+    date: "2022 - heute",
   },
   {
     jobtitle: "Parasit",
-    where: "Maskerade (musical)",
+    where: "Maskerade (Musical)",
     date: "2023 - 2024",
   },
   {
-    jobtitle: "Franck, le Conférencier",
-    where: "Bloody Maries (musical)",
+    jobtitle: "Franck, der Konferenzsprecher",
+    where: "Bloody Maries (Musical)",
     date: "2023",
   },
 ];
 
 const skills = [
   {
-    name: "Singing",
+    name: "Gesang",
     value: 5,
   },
   {
@@ -53,84 +53,82 @@ const skills = [
     value: "5",
   },
   {
-    name: "Piano",
+    name: "Klavier",
     value: 4,
   },
   {
-    name: "Dancing",
+    name: "Tanzen",
     value: 3,
   },
   {
-    name: "Guitar",
+    name: "Gitarre",
     value: "3",
   },
   {
-    name: "Kickboxing",
+    name: "Kickboxen",
     value: "2",
   },
 ];
 
 const languages = [
   {
-    name: "German",
+    name: "Deutsch",
     value: "5",
   },
   {
-    name: "American English",
+    name: "Amerikanisches Englisch",
     value: "5",
   },
   {
-    name: "British English",
+    name: "Britisches Englisch",
     value: "4",
   },
   {
-    name: "Italian",
+    name: "Italienisch",
     value: "2",
   },
   {
-    name: "French",
+    name: "Französisch",
     value: "2",
   },
 ];
 
 const other_interests = [
   {
-    title: "Technology and Mathematics",
-    description: `This has been my other passion from a young age, and I made it my day job. It also grants me a unique view on the technical aspects of projects and the development of the business.
-      
-      To anticipate the question: Trek, not Wars.`,
+    title: "Technologie und Mathematik",
+    description: `Dies war von klein auf meine andere Leidenschaft, und ich habe es zu meinem Beruf gemacht. Es gewährt mir auch einen einzigartigen Blick auf die technischen Aspekte von Projekten und die Entwicklung des Geschäfts.
+
+    Um die Frage vorwegzunehmen: Trek, nicht Wars.`,
   },
   {
-    title: "Sports and Body Building",
+    title: "Sport und Bodybuilding",
     description:
-      "Routines to stay healthy and stay in shape are baked into my day. You will find me at the gym at least four times a week, and I frequently go for a run or to ride my bike. Dancing and stretching keep me flexible.",
+      "Routinen, um gesund zu bleiben und in Form zu bleiben, sind in meinen Tagesablauf eingebaut. Sie werden mich mindestens viermal pro Woche im Fitnessstudio finden, und ich gehe häufig laufen oder fahre Fahrrad. Tanzen und Dehnen halten mich flexibel.",
   },
   {
-    title: "Philosophy and Lifestyle",
+    title: "Philosophie und Lebensstil",
     description:
-      "What is good? What is right? What is meant to be and are there things that are meant to be? How should we approach one another? How can I become my best self? The goal: to be better than I am.",
+      "Was ist gut? Was ist richtig? Was soll sein und gibt es Dinge, die sein sollen? Wie sollten wir einander begegnen? Wie kann ich mein bestes Selbst werden? Das Ziel: besser zu sein, als ich bin.",
   },
   {
-    title: "Producing, Directing and Editing",
+    title: "Produzieren, Regie führen und Editieren",
     description:
-      "As much as I love being on stage and in front of the camera, I have realized I am quite good at bringing my own ideas to life. So far, these have been mostly experiments, but I am currently refining two promising ideas for commercial use.",
+      "So sehr ich es liebe, auf der Bühne und vor der Kamera zu stehen, habe ich erkannt, dass ich ziemlich gut darin bin, meine eigenen Ideen zum Leben zu erwecken. Bisher waren dies meist Experimente, aber derzeit verfeinere ich zwei vielversprechende Ideen für den kommerziellen Gebrauch.",
   },
   {
-    title: "Travel",
+    title: "Reisen",
     description:
-      "My day job allows me to travel around Germany quite a lot and I frequently travel abroad. At least once a year, I go on a bike trip with friends, just living out of our bags, meeting new people and seeing amazing landscapes. So far, we have been to 14 countries.",
+      "Mein Beruf ermöglicht es mir, viel in Deutschland zu reisen, und ich reise häufig ins Ausland. Mindestens einmal im Jahr mache ich eine Fahrradtour mit Freunden, nur mit unseren Taschen, wir treffen neue Leute und sehen atemberaubende Landschaften. Bisher waren wir in 14 Ländern.",
   },
 ];
 
 const pics_landscape = [
+  "https://i.postimg.cc/90z3MySh/2C3A5438.jpg",
   "https://i.postimg.cc/7LbSK6pL/2-C3-A5155-2-2.jpg",
-  "https://i.postimg.cc/52zVLqt9/2-C3-A5215-2.jpg",
   "https://i.postimg.cc/tTBQpBBk/2-C3-A5388-2.jpg",
   "https://i.postimg.cc/j5x0pp4C/2-C3-A5367-2.jpg",
-  "https://i.postimg.cc/90z3MySh/2C3A5438.jpg",
-  "https://i.postimg.cc/HWM9Grjc/2-C3-A5111-2.jpg",
-  "https://i.postimg.cc/1XdkNfhN/2-C3-A5788-2.jpg",
   "https://i.postimg.cc/PqM0Q6nH/2-C3-A6053-2.jpg",
+  "https://i.postimg.cc/HWM9Grjc/2-C3-A5111-2.jpg",
 ];
 
 const pics_portrait = [
@@ -141,17 +139,14 @@ const pics_portrait = [
   "https://i.postimg.cc/Hs40xFwT/2-C3-A5068-2.jpg",
   "https://i.postimg.cc/SKppr2X6/2C3A5322.jpg",
   "https://i.postimg.cc/WzdKjTFp/2C3A6143.jpg",
-  "https://i.postimg.cc/fTtnQjm7/2-C3-A5476-2.jpg",
-  "https://i.postimg.cc/T1nVn4Bq/2-C3-A5099-2.jpg",
   "https://i.postimg.cc/3xmsd8Ld/2-C3-A5829-2.jpg",
-  "https://i.postimg.cc/HLKXRmg9/2-C3-A5133-2.jpg",
-  "https://i.postimg.cc/XqtPYmdf/2C3A6148.jpg",
+  "https://i.postimg.cc/T1nVn4Bq/2-C3-A5099-2.jpg",
 ];
 const contactConfig = {
   YOUR_EMAIL: "info@lucaswac.com",
   YOUR_FONE: "+49 1515 3272 456",
-  description: "", // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+  description: "", // erstellen Sie ein emailjs.com-Konto
+  // sehen Sie sich dieses Tutorial an https://www.emailjs.com/docs/examples/reactjs/
   YOUR_SERVICE_ID: "service_411p4de",
   YOUR_TEMPLATE_ID: "template_hv9i2jq",
   YOUR_USER_ID: "6H-Q0Ma6rAJK2dame",

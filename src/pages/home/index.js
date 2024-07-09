@@ -23,7 +23,7 @@ export const Home = () => {
               className="h_bg-image order-1 order-lg-2 h-100"
               style={{
                 backgroundImage: `url(${introdata.your_img_url})`,
-                backgroundPosition: "center 8%",
+                backgroundPosition: "70% 8%",
               }}
             ></div>
             <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
@@ -40,6 +40,7 @@ export const Home = () => {
                         ],
                         autoStart: true,
                         loop: true,
+                        delay: 40,
                         deleteSpeed: 10,
                       }}
                     />
@@ -48,7 +49,7 @@ export const Home = () => {
                   <div className="intro_btn-action pb-5">
                     <a href="#gallery" className="text_2">
                       <div id="button_p" className="ac_btn btn">
-                        My Gallery
+                        Galerie
                         <div className="ring one"></div>
                         <div className="ring two"></div>
                         <div className="ring three"></div>
@@ -56,7 +57,7 @@ export const Home = () => {
                     </a>
                     <a href="#about">
                       <div id="button_h" className="ac_btn btn">
-                        About Me
+                        Über mich
                         <div className="ring one"></div>
                         <div className="ring two"></div>
                         <div className="ring three"></div>
@@ -64,7 +65,7 @@ export const Home = () => {
                     </a>
                     <a href="#contact">
                       <div id="button_h" className="ac_btn btn">
-                        Contact Me
+                        Kontakt
                         <div className="ring one"></div>
                         <div className="ring two"></div>
                         <div className="ring three"></div>

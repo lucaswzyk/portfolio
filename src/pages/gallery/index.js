@@ -30,7 +30,7 @@ export const Gallery = () => {
       <Container className="About-header">
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="12">
-            <h1 className="display-4 mb-4">Gallery</h1>
+            <h1 className="display-4 mb-4">Gallerie</h1>
             <hr className="separator-line" />
           </Col>
         </Row>
@@ -54,27 +54,6 @@ export const Gallery = () => {
             <hr className="separator-line" />
           </Col>
         </Row>
-        {/* Landscape Images Section */}
-        <Row className="mb-5 po_items_ho">
-          {pics_landscape.map((url, i) => (
-            <Col xs={12} md={6} key={i}>
-              <Card className="po_item" onClick={() => handleImageClick(i)}>
-                <CardMedia
-                  component="img"
-                  image={url}
-                  alt=""
-                  className="card-media landscape-media"
-                />
-              </Card>
-            </Col>
-          ))}
-        </Row>
-        {/* Separator Line */}
-        <Row className="mb-5">
-          <Col lg="12">
-            <hr className="separator-line" />
-          </Col>
-        </Row>
         {/* Portrait Images Section */}
         <Row className="mb-5 po_items_ho portrait-section">
           {pics_portrait.map((url, i) => (
@@ -88,6 +67,27 @@ export const Gallery = () => {
                   image={url}
                   alt=""
                   className="card-media portrait-media"
+                />
+              </Card>
+            </Col>
+          ))}
+        </Row>
+        {/* Separator Line */}
+        <Row className="mb-5">
+          <Col lg="12">
+            <hr className="separator-line" />
+          </Col>
+        </Row>
+        {/* Landscape Images Section */}
+        <Row className="mb-5 po_items_ho">
+          {pics_landscape.map((url, i) => (
+            <Col xs={12} md={6} key={i}>
+              <Card className="po_item" onClick={() => handleImageClick(i)}>
+                <CardMedia
+                  component="img"
+                  image={url}
+                  alt=""
+                  className="card-media landscape-media"
                 />
               </Card>
             </Col>
@@ -114,7 +114,7 @@ export const Gallery = () => {
               style={{ height: "100%", width: "100%" }}
             >
               {/* Render all images in carousel */}
-              {pics_landscape.map((url, i) => (
+              {pics_portrait.map((url, i) => (
                 <div key={i}>
                   <img
                     src={url}
@@ -128,8 +128,8 @@ export const Gallery = () => {
                   />
                 </div>
               ))}
-              {pics_portrait.map((url, i) => (
-                <div key={i + pics_landscape.length}>
+              {pics_landscape.map((url, i) => (
+                <div key={i + pics_portrait.length}>
                   <img
                     src={url}
                     alt=""
@@ -145,6 +145,12 @@ export const Gallery = () => {
             </Carousel>
           </DialogContent>
         </Dialog>
+        {/* Photographer Credit */}
+        <Row className="mt-5">
+          <Col lg="12" className="text-center">
+            <p className="photographer-credit">Fotos: Birgitta Weizenegger</p>
+          </Col>
+        </Row>
       </Container>
     </HelmetProvider>
   );
