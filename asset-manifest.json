@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7ace187b.css",
-    "main.js": "/portfolio/static/js/main.221dbb14.js",
-    "reactPlayerYouTube.js": "/portfolio/static/js/reactPlayerYouTube.1bf7d435.chunk.js",
-    "reactPlayerSoundCloud.js": "/portfolio/static/js/reactPlayerSoundCloud.8a68dd03.chunk.js",
-    "reactPlayerVimeo.js": "/portfolio/static/js/reactPlayerVimeo.a9cd51f7.chunk.js",
-    "reactPlayerMux.js": "/portfolio/static/js/reactPlayerMux.b0c16490.chunk.js",
-    "reactPlayerFacebook.js": "/portfolio/static/js/reactPlayerFacebook.1da565bd.chunk.js",
-    "reactPlayerStreamable.js": "/portfolio/static/js/reactPlayerStreamable.cccba320.chunk.js",
-    "reactPlayerWistia.js": "/portfolio/static/js/reactPlayerWistia.42a98a03.chunk.js",
-    "reactPlayerTwitch.js": "/portfolio/static/js/reactPlayerTwitch.a9a25a85.chunk.js",
-    "reactPlayerDailyMotion.js": "/portfolio/static/js/reactPlayerDailyMotion.56673638.chunk.js",
-    "reactPlayerMixcloud.js": "/portfolio/static/js/reactPlayerMixcloud.15918ff3.chunk.js",
-    "reactPlayerVidyard.js": "/portfolio/static/js/reactPlayerVidyard.a0cf5548.chunk.js",
-    "reactPlayerKaltura.js": "/portfolio/static/js/reactPlayerKaltura.9c7c1999.chunk.js",
-    "reactPlayerFilePlayer.js": "/portfolio/static/js/reactPlayerFilePlayer.e00e7dc7.chunk.js",
-    "reactPlayerPreview.js": "/portfolio/static/js/reactPlayerPreview.5b3a9454.chunk.js",
+    "main.css": "/portfolio/static/css/main.784f379f.css",
+    "main.js": "/portfolio/static/js/main.50f0c63a.js",
+    "reactPlayerYouTube.js": "/portfolio/static/js/reactPlayerYouTube.e078f2de.chunk.js",
+    "reactPlayerSoundCloud.js": "/portfolio/static/js/reactPlayerSoundCloud.6a5203d5.chunk.js",
+    "reactPlayerVimeo.js": "/portfolio/static/js/reactPlayerVimeo.6cf47932.chunk.js",
+    "reactPlayerMux.js": "/portfolio/static/js/reactPlayerMux.da2ad02c.chunk.js",
+    "reactPlayerFacebook.js": "/portfolio/static/js/reactPlayerFacebook.7625643f.chunk.js",
+    "reactPlayerStreamable.js": "/portfolio/static/js/reactPlayerStreamable.7a5e9db6.chunk.js",
+    "reactPlayerWistia.js": "/portfolio/static/js/reactPlayerWistia.f26edaf3.chunk.js",
+    "reactPlayerTwitch.js": "/portfolio/static/js/reactPlayerTwitch.18b6e32e.chunk.js",
+    "reactPlayerDailyMotion.js": "/portfolio/static/js/reactPlayerDailyMotion.c838503c.chunk.js",
+    "reactPlayerMixcloud.js": "/portfolio/static/js/reactPlayerMixcloud.b5c6b4cd.chunk.js",
+    "reactPlayerVidyard.js": "/portfolio/static/js/reactPlayerVidyard.b5302a0f.chunk.js",
+    "reactPlayerKaltura.js": "/portfolio/static/js/reactPlayerKaltura.3f642312.chunk.js",
+    "reactPlayerFilePlayer.js": "/portfolio/static/js/reactPlayerFilePlayer.e9d9381e.chunk.js",
+    "reactPlayerPreview.js": "/portfolio/static/js/reactPlayerPreview.2674dc4e.chunk.js",
     "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.7ace187b.css",
-    "static/js/main.221dbb14.js"
+    "static/css/main.784f379f.css",
+    "static/js/main.50f0c63a.js"
   ]
 }
