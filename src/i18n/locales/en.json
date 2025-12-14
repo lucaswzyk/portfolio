@@ -287,7 +287,8 @@
     "home": "HOME",
     "gallery": "Gallery",
     "about": "About Me",
-    "contact": "Contact"
+    "contact": "Contact",
+    "legal": "Legal Notice"
   },
   "language_switcher": {
     "language": "Language",
@@ -299,5 +300,16 @@
   },
   "gallery": {
     "photographer": "Photos: Birgitta Weizenegger"
+  },
+  "legal": {
+    "title": "Impressum / Legal Notice",
+    "subtitle": "Website operator information",
+    "back_home": "← Back to Home",
+    "contact": "Contact",
+    "notice_link": "Impressum / Legal Notice",
+    "meta_description": "Legal notice and contact information for Luke Ashford's website.",
+    "footer": {
+      "all_rights": "All rights reserved."
+    }
   }
 }

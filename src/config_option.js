@@ -40,6 +40,13 @@ const contactConfig = {
   YOUR_USER_ID: "6H-Q0Ma6rAJK2dame",
 };
 
+const legalNotice = {
+  name: "Lucas Waclawczyk",
+  street: "Am Rehwinkel",
+  city: "14548 Schwielowsee, Germany",
+  email: "luke@lukeashford.com"
+};
+
 const socialprofiles = {
   insta: "https://instagram.com/lucaswzyk",
 };
@@ -60,5 +67,6 @@ export {
   pics_landscape,
   contactConfig,
   socialprofiles,
+  legalNotice,
   layoutConfig,
 };

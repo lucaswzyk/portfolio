@@ -287,7 +287,8 @@
     "home": "STARTSEITE",
     "gallery": "Galerie",
     "about": "Über mich",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "legal": "Impressum"
   },
   "language_switcher": {
     "language": "Sprache",
@@ -299,5 +300,16 @@
   },
   "gallery": {
     "photographer": "Fotos: Birgitta Weizenegger"
+  },
+  "legal": {
+    "title": "Impressum / Rechtliche Hinweise",
+    "subtitle": "Angaben zum Webseitenbetreiber",
+    "back_home": "← Zurück zur Startseite",
+    "contact": "Kontakt",
+    "notice_link": "Impressum / Rechtliche Hinweise",
+    "meta_description": "Impressum und Kontaktdaten für Luke Ashfords Webseite.",
+    "footer": {
+      "all_rights": "Alle Rechte vorbehalten."
+    }
   }
 }

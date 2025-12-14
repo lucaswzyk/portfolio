@@ -1,8 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 import AppRoutes from "./routes";
 import Headermain from "../header";
+import Footer from "../components/footer";
 // import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
 // Import i18n configuration
@@ -10,8 +11,8 @@ import "../i18n/i18n";
 
 export default function App() {
   return (
-    <Router>
-      {/* <div className="cursor__dot">
+      <Router>
+        {/* <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}
           outerSize={15}
@@ -21,8 +22,9 @@ export default function App() {
           outerScale={5}
         />
       </div> */}
-      <Headermain />
-      <AppRoutes />
-    </Router>
+        <Headermain/>
+        <AppRoutes/>
+        <Footer/>
+      </Router>
   );
 }

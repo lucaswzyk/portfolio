@@ -10,6 +10,7 @@ A personal portfolio website built with React.
 - React-Bootstrap
 - Internationalization (i18n) Support
 - Edit Content From One Place
+- Legal notice page and footer link (Impressum)
 
 ### Setup
 
@@ -47,6 +48,8 @@ To add support for additional languages:
 
 Non-text content (image URLs, email service configuration, etc.) is managed in
 `src/config_option.js`.
+
+- Legal notice address/email values live in `src/config_option.js` under `legalNotice`.
 
 ### Development Notes
 
