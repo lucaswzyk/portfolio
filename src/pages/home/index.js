@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import {Helmet, HelmetProvider} from "react-helmet-async";
+import {Helmet, HelmetProvider} from "@dr.pogodin/react-helmet";
 import Typewriter from "typewriter-effect";
 import {useTranslation} from "react-i18next";
 import {introdata, personalInfo} from "../../config_option"; // Import for the image URL and resume

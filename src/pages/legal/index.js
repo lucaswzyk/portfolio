@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import {Helmet, HelmetProvider} from "react-helmet-async";
+import {Helmet, HelmetProvider} from "@dr.pogodin/react-helmet";
 import {Card, Col, Container, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";

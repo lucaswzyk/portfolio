@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import {HelmetProvider} from "react-helmet-async";
+import {HelmetProvider} from "@dr.pogodin/react-helmet";
 import {Col, Container, Row} from "react-bootstrap";
 import {useTranslation} from "react-i18next";
 import StarRating from "../../components/starBar";

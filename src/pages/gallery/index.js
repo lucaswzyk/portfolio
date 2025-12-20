@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./style.css";
-import {HelmetProvider} from "react-helmet-async";
+import {HelmetProvider} from "@dr.pogodin/react-helmet";
 import {Col, Container, Row} from "react-bootstrap";
 import {pics_landscape, pics_portrait} from "../../config_option"; // Import for the image URLs
 import {useTranslation} from "react-i18next";

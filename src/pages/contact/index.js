@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import * as emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import "./style.css";
-import {HelmetProvider} from "react-helmet-async";
+import {HelmetProvider} from "@dr.pogodin/react-helmet";
 import {Alert, Col, Container, Row} from "react-bootstrap";
 import {contactConfig, personalInfo} from "../../config_option"; // Import for the contact
                                                                  // configuration and personal info
