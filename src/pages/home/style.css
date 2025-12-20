@@ -8,25 +8,25 @@ section {
 }
 
 .who_am_I {
-  font-family: Cinzel, serif;
+  font-family: theme(fontFamily.heading);
 }
 
 .has-first-color {
-  color: var(--primary-color);
+  color: theme(colors.obsidian);
 }
 
 .btn-gallery {
-  background: var(--primary-color);
+  background: theme(colors.obsidian);
   border-radius: 0;
 }
 
 .btn-gallery a {
-  color: #000;
+  color: theme(colors.void);
   text-decoration: none;
 }
 
 .btn-about a {
-  color: var(--text-color);
+  color: theme(colors.gold);
   text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ section {
 }
 
 .intro_sec .intro .feature .wrap-icon svg {
-  color: #5cccc9;
+  color: theme(colors.gold);
 }
 
 .intro_sec .text h1 {
@@ -99,9 +99,9 @@ section {
 
 .ac_btn {
   padding: 4px 19px;
-  color: var(--secondary-color);
+  color: theme(colors.gold);
   position: relative;
-  border: var(--secondary-color) 2px solid;
+  border: theme(colors.gold) 2px solid;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   cursor: pointer;
@@ -114,8 +114,8 @@ section {
 }
 
 .ac_btn:hover {
-  box-shadow: 8px 8px 0 var(--text-color), -8px -8px 0 var(--text-color);
-  color: var(--primary-color);
+  box-shadow: 8px 8px 0 theme(colors.gold), -8px -8px 0 theme(colors.gold);
+  color: theme(colors.obsidian);
 }
 
 .ac_btn:hover .one {
@@ -146,30 +146,30 @@ section {
 }
 
 .ac_btn .one {
-  background-color: #000;
+  background-color: theme(colors.void);
   transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -4;
 }
 
 .ac_btn .two {
-  background-color: var(--primary-color);
+  background-color: theme(colors.obsidian);
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -3;
 }
 
 .ac_btn .three {
-  background-color: var(--secondary-color);
+  background-color: theme(colors.gold);
   transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -3;
 }
 
 #button_p {
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  background: theme(colors.gold);
+  color: theme(colors.obsidian);
 }
 
 .button_h:hover {
-  color: var(--primary-color);
+  color: theme(colors.obsidian);
 }
 
 .intro_sec .h_bg-image .block {
@@ -181,8 +181,7 @@ section {
   width: 250px;
   height: 220px;
   border-radius: 100%;
-  /* mix-blend-mode: multiply; */
-  background-color: #2f514e;
+  background-color: theme(colors.charcoal);
   z-index: 9999999999;
   display: flex;
   align-items: center;
@@ -208,14 +207,14 @@ section {
 
 .intro_sec .h_bg-image .block .wrap-icon {
   font-size: 40px;
-  color: var(--text-color);
+  color: theme(colors.gold);
   margin-bottom: 10px;
   display: block;
 }
 
 .intro_sec .h_bg-image .block h3 {
   font-size: 14px;
-  color: var(--text-color);
+  color: theme(colors.gold);
   letter-spacing: 0.1rem;
   font-weight: 700;
   margin-bottom: 15px;
@@ -224,7 +223,7 @@ section {
 .intro_sec .h_bg-image .block p {
   font-size: 14px;
   line-height: 1.3;
-  color: var(--text-color);
+  color: theme(colors.gold);
 }
 
 .intro_sec .h_bg-image {
@@ -244,7 +243,7 @@ html {
 .gallery,
 .about,
 .contact {
-  padding: 50px 0; /* Adjust padding as needed */
+  padding: 50px 0;
 }
 
 .intro_btn-action .ac_btn {

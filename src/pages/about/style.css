@@ -4,8 +4,8 @@
 
 .table td,
 .table th {
-  color: var(--text-color);
-  border-color: var(--text-color);
+  color: theme(colors.gold);
+  border-color: theme(colors.gold);
   padding: 0.5rem;
 }
 
@@ -15,17 +15,16 @@
 }
 
 .table-bordered {
-  border: 1px solid var(--text-color);
+  border: 1px solid theme(colors.gold);
 }
 
-/* Custom table header styling */
 .table-header {
-  background-color: transparent; /* Transparent background */
+  background-color: transparent;
 }
 
 .table-header th {
-  color: var(--text-color); /* Same color as other text */
-  font-weight: 700; /* Bold font to distinguish headers */
+  color: theme(colors.gold);
+  font-weight: 700;
 }
 
 .table thead th {
@@ -38,11 +37,10 @@
   vertical-align: middle;
 }
 
-/* Project tables styling */
 .mb-5 h4 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--text-color);
+  color: theme(colors.gold);
   font-weight: 600;
 }
 
@@ -59,19 +57,19 @@
 }
 
 .t_border {
-  border-color: var(--primary-color);
+  border-color: theme(colors.obsidian);
 }
 
 .progress-title {
   font-size: 16px;
   font-weight: 700;
   margin: 15px 0 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: theme(fontFamily.body);
 }
 
 .progress {
   height: 5px;
-  background: var(--secondary-color);
+  background: theme(colors.gold);
   border-radius: 0;
   box-shadow: none;
   margin-bottom: 30px;
@@ -80,7 +78,7 @@
 
 .progress .progress-bar {
   position: relative;
-  background: var(--text-color);
+  background: theme(colors.gold);
   animation: animate-positive 2s;
   overflow: visible;
   opacity: 0.9;
@@ -93,7 +91,7 @@
   font-size: 17px;
   font-weight: bold;
   font-style: italic;
-  color: var(--text-color);
+  color: theme(colors.gold);
 }
 
 @-webkit-keyframes animate-positive {
@@ -120,7 +118,7 @@
 
 .service__title {
   padding: 8px 0;
-  border-bottom: solid 2px var(--secondary-color);
+  border-bottom: solid 2px theme(colors.gold);
 }
 
 .service-section .service-category-title {

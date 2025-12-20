@@ -1,8 +1,8 @@
 .site-footer {
   margin-top: 80px;
   padding: 40px 0;
-  border-top: 1px solid var(--border-color, rgba(255, 255, 255, 0.2));
-  color: var(--text-color);
+  border-top: 1px solid theme(colors.ash / 20%);
+  color: theme(colors.gold);
   background: transparent;
 }
 
@@ -25,19 +25,19 @@
 }
 
 .footer-link {
-  color: var(--text-color);
+  color: theme(colors.gold);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .footer-link:hover {
-  color: var(--text-color-3);
+  color: theme(colors.gold-bright);
   text-decoration: underline;
 }
 
 .footer-sub {
   margin-bottom: 0;
-  color: var(--text-color-2);
+  color: theme(colors.silver);
   font-size: 0.95rem;
 }
 

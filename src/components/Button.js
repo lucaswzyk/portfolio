@@ -1,24 +1,25 @@
 import React from "react";
+import { Button as AureliusButton } from "@lukeashford/aurelius";
 
 const Button = ({
   children,
   type = "button",
   onClick,
   className = "",
-  disabled = false
+  disabled = false,
+  variant = "primary",
+  ...props
 }) => {
   return (
-      <button
-          className={`btn ac_btn button_h ${className}`}
-          type={type}
-          onClick={onClick}
-          disabled={disabled}
-      >
-        {children}
-        <div className="ring one"></div>
-        <div className="ring two"></div>
-        <div className="ring three"></div>
-      </button>
+    <AureliusButton
+      variant={variant}
+      onClick={onClick}
+      disabled={disabled}
+      className={className}
+      {...props}
+    >
+      {children}
+    </AureliusButton>
   );
 };
 
