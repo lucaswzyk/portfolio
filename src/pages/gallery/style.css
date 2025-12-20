@@ -10,9 +10,9 @@
   text-align: center;
   margin: 0.7rem auto;
   position: relative;
-  background: var(--secondary-color);
+  background: theme(colors.charcoal);
   padding: 0;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid theme(colors.ash);
   transition: 0.3s ease;
   font-size: 0;
   min-height: 300px;
@@ -29,7 +29,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--overlay-color);
+  background: theme(colors.obsidian / 90%);
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@
   align-items: center;
   transition: 0.3s ease-in-out;
   opacity: 0;
-  border: 1px solid black;
+  border: 1px solid theme(colors.void);
   transition-delay: 1s;
   font-size: 20px;
 }
@@ -50,12 +50,12 @@
   height: calc(100% - 30px);
   width: calc(100% - 30px);
   opacity: 1;
-  color: var(--secondary-color);
+  color: theme(colors.gold);
 }
 
 .po_item .content a {
-  background: var(--bg-color);
-  border: solid 1px var(--text-color);
+  background: theme(colors.obsidian);
+  border: solid 1px theme(colors.gold);
   padding: 4px 8px;
   text-align: center;
   font-size: 1rem;

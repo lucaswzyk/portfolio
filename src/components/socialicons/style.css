@@ -16,7 +16,7 @@
 .stick_follow_icon svg {
     width: 1.3em;
     height: 1.3em;
-    fill: var(--text-color)
+    fill: theme(colors.gold)
 }
 
 .stick_follow_icon p {
@@ -24,7 +24,7 @@
     left: -24px;
     width: 68px;
     height: 20px;
-    color: var(--text-color);
+    color: theme(colors.gold);
     font-size: 12px;
     font-weight: 600;
     line-height: 1.2;
@@ -49,7 +49,7 @@
     content: "";
     display: block;
     position: absolute;
-    background-color: var(--text-color);
+    background-color: theme(colors.gold);
 }
 
 @media only screen and (max-width: 991px) {

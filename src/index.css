@@ -4,9 +4,8 @@
 /* Tell Tailwind to scan the Aurelius package for utility classes */
 @source "../node_modules/@lukeashford/aurelius/dist";
 
-/* Legacy styles - to be migrated */
-html,
-body {
+/* Base styles */
+html {
   height: 100%;
 }
 
@@ -17,6 +16,9 @@ body {
   overflow-y: visible;
   padding-top: 0px;
   padding-bottom: 50px;
+  background-color: theme(colors.obsidian);
+  color: theme(colors.white);
+  font-family: theme(fontFamily.body);
 }
 
 ul {
@@ -43,10 +45,10 @@ code {
 }
 
 .cursor__dot div:last-child {
-  background-color: var(--text-color-3) !important;
+  background-color: theme(colors.gold) !important;
 }
 
 .cursor__dot div:first-child {
   filter: invert(1);
-  background-color: var(--overlay-color) !important;
+  background-color: theme(colors.obsidian / 90%) !important;
 }
