@@ -22,9 +22,9 @@ export const Home = () => {
           </Helmet>
           {/* Home Section */}
           <section id="home" className="home">
-            <div className="intro_sec d-block d-lg-flex align-items-center">
+            <div className="intro_sec block lg:flex items-center">
               <div
-                  className="h_bg-image order-1 order-lg-2 h-100"
+                  className="h_bg-image order-1 lg:order-2 h-full"
                   style={{
                     backgroundImage: `url(${introdata.your_img_url})`,
                     backgroundPosition: "70% 30%",
@@ -32,11 +32,11 @@ export const Home = () => {
                   aria-label={t("intro.profile_image_alt")}
                   role="img"
               ></div>
-              <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
-                <div className="align-self-center">
+              <div className="text order-2 lg:order-1 h-full lg:flex justify-center">
+                <div className="self-center">
                   <div className="intro mx-auto">
-                    <h2 className="mb-1x">{t("personalInfo.name")}</h2>
-                    <h1 className="fluidz-48 mb-1x">
+                    <h2 className="mb-4">{t("personalInfo.name")}</h2>
+                    <h1 className="fluidz-48 mb-4">
                       <Typewriter
                           options={{
                             strings: [
@@ -51,7 +51,7 @@ export const Home = () => {
                           }}
                       />
                     </h1>
-                    <p className="mb-1x">{t("intro.description")}</p>
+                    <p className="mb-4">{t("intro.description")}</p>
                     <div className="intro_btn-action">
                       <a href="/#gallery" onClick={(e) => {
                         e.preventDefault();
