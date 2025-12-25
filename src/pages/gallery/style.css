@@ -50,12 +50,7 @@
   margin: 0 10px !important;
 }
 
-/* Custom styles for portrait images in carousel */
-.portrait-container {
-  background-color: black; /* Ensures no white edges are visible */
-}
-
-/* Ensure the carousel slide has a black background */
+/* Ensure the carousel slide has a dark background */
 .carousel .slide {
-  background: black !important;
+  background: #0a0a0a !important;
 }

@@ -11,7 +11,7 @@ export const About = () => {
 
   return (
       <HelmetProvider>
-        <Container className="About-header">
+        <Container>
           <Row className="mb-5 mt-3 md:pt-3">
             <Col span={layoutConfig.about.fullWidthColWidth}>
               <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.about")}</h1>

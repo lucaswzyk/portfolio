@@ -25,7 +25,7 @@ export const Gallery = () => {
 
   return (
       <HelmetProvider>
-        <Container className="About-header">
+        <Container>
           <Row className="mb-5 mt-3 md:pt-3">
             <Col span={12}>
               <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.gallery")}</h1>
@@ -53,11 +53,11 @@ export const Gallery = () => {
             </Col>
           </Row>
           {/* Portrait Images Section */}
-          <Row className="mb-5 po_items_ho portrait-section">
+          <Row className="mb-5">
             {pics_portrait.map((url, i) => (
                 <Col span={4} key={i}>
                   <Card
-                      className="po_item rounded-none"
+                      className="rounded-none"
                       interactive
                       noPadding
                       onClick={() => handleImageClick(i)}
@@ -65,7 +65,7 @@ export const Gallery = () => {
                     <img
                         src={url}
                         alt=""
-                        className="card-media portrait-media w-full"
+                        className="w-full h-auto object-cover"
                     />
                   </Card>
                 </Col>
@@ -78,11 +78,11 @@ export const Gallery = () => {
             </Col>
           </Row>
           {/* Landscape Images Section */}
-          <Row className="mb-5 po_items_ho">
+          <Row className="mb-5">
             {pics_landscape.map((url, i) => (
                 <Col span={6} key={i}>
                   <Card
-                      className="po_item rounded-none"
+                      className="rounded-none"
                       interactive
                       noPadding
                       onClick={() => handleImageClick(i + pics_portrait.length)}
@@ -90,7 +90,7 @@ export const Gallery = () => {
                     <img
                         src={url}
                         alt=""
-                        className="card-media landscape-media w-full"
+                        className="w-full h-auto object-cover"
                     />
                   </Card>
                 </Col>
@@ -121,13 +121,13 @@ export const Gallery = () => {
                 {pics_portrait.map((url, i) => (
                     <div
                         key={i}
-                        className="portrait-container flex justify-center w-full"
+                        className="flex justify-center w-full bg-obsidian"
                     >
-                      <div className="w-[70%] max-w-3xl">
+                      <div className="w-9/12 max-w-3xl">
                         <img
                             src={url}
                             alt=""
-                            className="carousel_image max-h-screen w-full object-contain"
+                            className="max-h-screen w-full object-contain"
                         />
                       </div>
                     </div>
@@ -137,7 +137,7 @@ export const Gallery = () => {
                       <img
                           src={url}
                           alt=""
-                          className="carousel_image max-h-screen w-full object-contain"
+                          className="max-h-screen w-full object-contain"
                       />
                     </div>
                 ))}
