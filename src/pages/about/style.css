@@ -8,12 +8,12 @@
   font-size: 16px;
   font-weight: 700;
   margin: 15px 0 20px;
-  font-family: theme("fontFamily.body");
+  font-family: theme(fontFamily.body);
 }
 
 .progress {
   height: 5px;
-  background: theme("colors.gold");
+  background: theme(colors.gold);
   border-radius: 0;
   box-shadow: none;
   margin-bottom: 30px;
@@ -22,7 +22,7 @@
 
 .progress .progress-bar {
   position: relative;
-  background: theme("colors.gold");
+  background: theme(colors.gold);
   animation: animate-positive 2s;
   overflow: visible;
   opacity: 0.9;
@@ -35,7 +35,7 @@
   font-size: 17px;
   font-weight: bold;
   font-style: italic;
-  color: theme("colors.gold");
+  color: theme(colors.gold);
 }
 
 @-webkit-keyframes animate-positive {
@@ -62,7 +62,7 @@
 
 .service__title {
   padding: 8px 0;
-  border-bottom: solid 2px theme("colors.gold");
+  border-bottom: solid 2px theme(colors.gold);
 }
 
 .service-section .service-category-title {

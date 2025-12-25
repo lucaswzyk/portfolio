@@ -16,9 +16,9 @@ body {
   overflow-y: visible;
   padding-top: 0px;
   padding-bottom: 50px;
-  background-color: theme("colors.obsidian");
-  color: theme("colors.white");
-  font-family: theme("fontFamily.body");
+  background-color: theme(colors.obsidian);
+  color: theme(colors.white);
+  font-family: theme(fontFamily.body);
 }
 
 ul {
@@ -45,10 +45,10 @@ code {
 }
 
 .cursor__dot div:last-child {
-  background-color: theme("colors.gold") !important;
+  background-color: theme(colors.gold) !important;
 }
 
 .cursor__dot div:first-child {
   filter: invert(1);
-  background-color: theme("colors.obsidian" / 90%) !important;
+  background-color: theme(colors.obsidian / 90%) !important;
 }
