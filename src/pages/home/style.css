@@ -33,7 +33,8 @@ section {
 .intro_sec {
   height: 100vh;
   min-height: 700px;
-  margin-top: -60px;
+  margin-top: -70px;
+  padding-top: 0;
 }
 
 @media (max-width: 991.98px) {
@@ -83,11 +84,21 @@ section {
   font-size: 30px;
   margin-bottom: 50px;
   font-weight: 700;
+  color: theme(colors.gold);
+}
+
+.intro_sec .text h2 {
+  color: theme(colors.gold);
 }
 
 .intro_sec .text h3 {
   font-size: 16px;
   font-weight: 700;
+  color: theme(colors.gold);
+}
+
+.intro_sec .text p {
+  color: theme(colors.gold);
 }
 
 .intro_sec .h_bg-image {
@@ -171,6 +182,12 @@ html {
   padding: 50px 0;
 }
 
+.intro_btn-action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .intro_btn-action .ac_btn {
-  margin: 0 10px;
+  margin: 0;
 }

@@ -1,7 +1,7 @@
+/* Remove masonry layout for proper grid */
 .po_items_ho {
-  column-width: 15em;
-  -moz-column-width: 15em;
-  -webkit-column-width: 15em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .po_item {
