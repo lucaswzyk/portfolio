@@ -54,9 +54,9 @@ const socialprofiles = {
 // Layout configuration for responsive design
 const layoutConfig = {
   about: {
-    fullWidthColWidth: "12",
-    headerColWidth: "3",
-    contentColWidth: "9"
+    fullWidthColWidth: 12,
+    headerColWidth: 12,
+    contentColWidth: 12
   }
 };
 

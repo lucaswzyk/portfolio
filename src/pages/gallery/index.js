@@ -28,8 +28,8 @@ export const Gallery = () => {
         <Container className="About-header">
           <Row className="mb-5 mt-3 md:pt-3">
             <Col span={12}>
-              <h1 className="text-4xl mb-4">{t("navigation.gallery")}</h1>
-              <hr className="separator-line"/>
+              <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.gallery")}</h1>
+              <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           {/* YouTube Video Section */}
@@ -49,15 +49,15 @@ export const Gallery = () => {
           {/* Separator Line */}
           <Row className="mb-5">
             <Col span={12}>
-              <hr className="separator-line"/>
+              <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           {/* Portrait Images Section */}
           <Row className="mb-5 po_items_ho portrait-section">
             {pics_portrait.map((url, i) => (
-                <Col span={{xs: 12, sm: 6, md: 4}} key={i}>
+                <Col span={4} key={i}>
                   <Card
-                      className="po_item"
+                      className="po_item rounded-none"
                       interactive
                       noPadding
                       onClick={() => handleImageClick(i)}
@@ -74,15 +74,15 @@ export const Gallery = () => {
           {/* Separator Line */}
           <Row className="mb-5">
             <Col span={12}>
-              <hr className="separator-line"/>
+              <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           {/* Landscape Images Section */}
           <Row className="mb-5 po_items_ho">
             {pics_landscape.map((url, i) => (
-                <Col span={{xs: 12, md: 6}} key={i}>
+                <Col span={6} key={i}>
                   <Card
-                      className="po_item"
+                      className="po_item rounded-none"
                       interactive
                       noPadding
                       onClick={() => handleImageClick(i + pics_portrait.length)}
@@ -147,7 +147,7 @@ export const Gallery = () => {
           {/* Photographer Credit */}
           <Row className="mt-5">
             <Col span={12} className="text-center">
-              <p className="photographer-credit">
+              <p className="text-silver">
                 {t("gallery.photographer")}
               </p>
             </Col>

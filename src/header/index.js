@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
+import { Navbar } from "@lukeashford/aurelius";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 
 const Headermain = () => {
@@ -11,18 +12,18 @@ const Headermain = () => {
   };
 
   return (
-    <header className="fixed-top site__header">
-      <div className="d-flex align-items-center justify-content-between">
+    <Navbar fixed className="site__header">
+      <div className="flex items-center justify-between w-full">
         <a
           href="/portfolio"
-          className="navbar-brand nav_ac"
+          className="nav_ac"
           onClick={handleLogoClick}
         >
           {t("logotext")}
         </a>
         <LanguageSwitcher />
       </div>
-    </header>
+    </Navbar>
   );
 };
 
