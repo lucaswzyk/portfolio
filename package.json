@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://lukeashford.com",
+  "type": "module",
   "dependencies": {
     "@dr.pogodin/react-helmet": "^3.0.4",
     "@emailjs/browser": "^4.0.0",

@@ -1,6 +1,3 @@
-/* Import Bootstrap CSS for grid system (Container, Row, Col) */
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
 /* Import the complete Aurelius design system (includes Tailwind v4, fonts, and theme) */
 @import '@lukeashford/aurelius/styles/base.css';
 
@@ -40,7 +37,7 @@ p {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
 }
 
 .cursor__dot div {

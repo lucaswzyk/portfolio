@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "Luke Ashford - Schauspieler, Sänger, Regisseur, Produzent, Editor in Berlin. Portfolio mit Film-, Theater- und Live-Event-Auftritten."
+  },
   "logotext": "STARTSEITE",
   "download_resume": "Lebenslauf herunterladen",
   "intro": {
@@ -7,7 +10,8 @@
       "second": "ist leidenschaftlicher Musiker.",
       "third": "entwickelt Geschichten und Shows."
     },
-    "description": "Schauspieler, Sänger, Regisseur, Produzent, Editor, derzeit in Berlin tätig"
+    "description": "Schauspieler, Sänger, Regisseur, Produzent, Editor, derzeit in Berlin tätig",
+    "profile_image_alt": "Profilfoto von Luke Ashford"
   },
   "about": {
     "title": "Das Woher und Wohin meines Umgetriebenseins",

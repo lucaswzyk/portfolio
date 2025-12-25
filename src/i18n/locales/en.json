@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "Luke Ashford - Actor, Singer, Director, Producer, Editor based in Berlin. Portfolio showcasing film, theatre, and live event performances."
+  },
   "logotext": "HOME",
   "download_resume": "Download Resume",
   "intro": {
@@ -7,7 +10,8 @@
       "second": "is a passionate musician.",
       "third": "develops stories and shows."
     },
-    "description": "Actor, Singer, Director, Producer, Editor, currently based in Berlin"
+    "description": "Actor, Singer, Director, Producer, Editor, currently based in Berlin",
+    "profile_image_alt": "Profile photo of Luke Ashford"
   },
   "about": {
     "title": "The Where and Why of My Journey",
