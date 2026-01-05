@@ -27,14 +27,14 @@ export const Gallery = () => {
       <HelmetProvider>
         <Container>
           <Row className="mb-5 mt-3 md:pt-3">
-            <Col span={12}>
+            <Col className="col-span-12">
               <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.gallery")}</h1>
               <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           {/* YouTube Video Section */}
           <Row className="mb-5">
-            <Col span={12}>
+            <Col className="col-span-12">
               <div className="player-wrapper">
                 <ReactPlayer
                     className="react-player"
@@ -48,14 +48,14 @@ export const Gallery = () => {
           </Row>
           {/* Separator Line */}
           <Row className="mb-5">
-            <Col span={12}>
+            <Col className="col-span-12">
               <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           {/* Portrait Images Section */}
           <Row className="mb-5">
             {pics_portrait.map((url, i) => (
-                <Col span={4} key={i}>
+                <Col key={i} className="col-span-12 sm:col-span-6 md:col-span-4">
                   <Card
                       className="rounded-none"
                       interactive
@@ -73,14 +73,14 @@ export const Gallery = () => {
           </Row>
           {/* Separator Line */}
           <Row className="mb-5">
-            <Col span={12}>
+            <Col className="col-span-12">
               <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           {/* Landscape Images Section */}
           <Row className="mb-5">
             {pics_landscape.map((url, i) => (
-                <Col span={6} key={i}>
+                <Col key={i} className="col-span-12 md:col-span-6">
                   <Card
                       className="rounded-none"
                       interactive
@@ -146,7 +146,7 @@ export const Gallery = () => {
           </Modal>
           {/* Photographer Credit */}
           <Row className="mt-5">
-            <Col span={12} className="text-center">
+            <Col className="col-span-12 text-center">
               <p className="text-silver">
                 {t("gallery.photographer")}
               </p>
