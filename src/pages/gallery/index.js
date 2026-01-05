@@ -7,6 +7,7 @@ import {useTranslation} from "react-i18next";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
 import ReactPlayer from "react-player";
+import {FiChevronLeft, FiChevronRight} from "react-icons/fi";
 
 export const Gallery = () => {
   const {t} = useTranslation();
@@ -116,6 +117,30 @@ export const Gallery = () => {
                   showArrows={true}
                   swipeable={true}
                   className="h-full w-full"
+                  renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                      hasPrev && (
+                          <button
+                              type="button"
+                              onClick={onClickHandler}
+                              title={label}
+                              className="gallery-arrow gallery-arrow-prev"
+                          >
+                            <FiChevronLeft size={32}/>
+                          </button>
+                      )
+                  }
+                  renderArrowNext={(onClickHandler, hasNext, label) =>
+                      hasNext && (
+                          <button
+                              type="button"
+                              onClick={onClickHandler}
+                              title={label}
+                              className="gallery-arrow gallery-arrow-next"
+                          >
+                            <FiChevronRight size={32}/>
+                          </button>
+                      )
+                  }
               >
                 {/* Render all images in carousel */}
                 {pics_portrait.map((url, i) => (

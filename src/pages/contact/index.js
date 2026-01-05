@@ -71,13 +71,13 @@ export const ContactUs = () => {
       <HelmetProvider>
         <Container>
           <Row className="mb-5 mt-3 md:pt-3">
-            <Col span={12}>
-              <h1 className="text-4xl mb-4">{t("navigation.contact")}</h1>
-              <hr className="separator-line"/>
+            <Col className="col-span-12">
+              <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.contact")}</h1>
+              <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           <Row className="sec_sp">
-            <Col span={12}>
+            <Col className="col-span-12">
               {formData.show && (
                   <Alert
                       variant={formData.variant === "danger" ? "error" : formData.variant}
@@ -87,7 +87,7 @@ export const ContactUs = () => {
                   </Alert>
               )}
             </Col>
-            <Col span={{lg: 5}} className="mb-5">
+            <Col className="col-span-12 lg:col-span-5 mb-5">
               <h3 className="color_sec py-4">
                 {t("contact.greeting")}
               </h3>
@@ -112,10 +112,10 @@ export const ContactUs = () => {
               </address>
               <p>{t("contact.description")}</p>
             </Col>
-            <Col span={{lg: 7}} className="flex items-center">
+            <Col className="col-span-12 lg:col-span-7 flex items-center">
               <form onSubmit={handleSubmit} className="contact__form w-full">
                 <Row className="mb-4">
-                  <Col span={{lg: 6}} className="mb-4">
+                  <Col className="col-span-12 lg:col-span-6 mb-4">
                     <Input
                         id="name"
                         name="name"
@@ -126,7 +126,7 @@ export const ContactUs = () => {
                         onChange={handleChange}
                     />
                   </Col>
-                  <Col span={{lg: 6}} className="mb-4">
+                  <Col className="col-span-12 lg:col-span-6 mb-4">
                     <Input
                         id="email"
                         name="email"
@@ -149,7 +149,7 @@ export const ContactUs = () => {
                     className="mb-4"
                 />
                 <Row>
-                  <Col span={12} className="text-center">
+                  <Col className="col-span-12 text-center">
                     <Button type="submit">
                       {formData.loading
                           ? t("contact.form.sending")
