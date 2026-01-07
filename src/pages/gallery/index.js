@@ -36,9 +36,9 @@ export const Gallery = () => {
           {/* YouTube Video Section */}
           <Row className="mb-5">
             <Col className="col-span-12">
-              <div className="player-wrapper">
+              <div className="relative w-full max-w-full max-h-full h-screen" style={{paddingBottom: '56.25%'}}>
                 <ReactPlayer
-                    className="react-player"
+                    className="absolute top-0 left-0 w-full h-full"
                     url="https://youtu.be/Oe6I6fAhNDw"
                     width="100%"
                     height="100%"
@@ -123,7 +123,7 @@ export const Gallery = () => {
                               type="button"
                               onClick={onClickHandler}
                               title={label}
-                              className="gallery-arrow gallery-arrow-prev"
+                              className="absolute top-1/2 left-4 -translate-y-1/2 z-10 bg-gold/80 hover:bg-gold text-obsidian p-3 rounded-full transition-colors"
                           >
                             <FiChevronLeft size={32}/>
                           </button>
@@ -135,7 +135,7 @@ export const Gallery = () => {
                               type="button"
                               onClick={onClickHandler}
                               title={label}
-                              className="gallery-arrow gallery-arrow-next"
+                              className="absolute top-1/2 right-4 -translate-y-1/2 z-10 bg-gold/80 hover:bg-gold text-obsidian p-3 rounded-full transition-colors"
                           >
                             <FiChevronRight size={32}/>
                           </button>

@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 import {
   FaFacebookF,
   FaGithub,
@@ -16,7 +15,7 @@ export const Socialicons = () => {
   const {t} = useTranslation();
 
   return (
-      <div className="stick_follow_icon">
+      <div className="fixed right-5 top-1/2 -translate-y-1/2 w-5 h-52 flex flex-col items-center justify-center" style={{zIndex: 999}}>
         <ul>
           {socialprofiles.twitter && (
               <li>

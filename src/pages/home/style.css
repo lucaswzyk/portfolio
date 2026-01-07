@@ -2,31 +2,29 @@ section {
   flex: 1 0 auto;
   position: relative;
   width: 100%;
-  -webkit-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
 
 .who_am_I {
-  font-family: theme(fontFamily.heading);
+  font-family: var(--font-heading);
 }
 
 .has-first-color {
-  color: theme(colors.obsidian);
+  color: var(--color-obsidian);
 }
 
 .btn-gallery {
-  background: theme(colors.obsidian);
+  background: var(--color-obsidian);
   border-radius: 0;
 }
 
 .btn-gallery a {
-  color: theme(colors.void);
+  color: var(--color-void);
   text-decoration: none;
 }
 
 .btn-about a {
-  color: theme(colors.gold);
+  color: var(--color-gold);
   text-decoration: none;
 }
 
@@ -77,28 +75,28 @@ section {
 }
 
 .intro_sec .intro .feature .wrap-icon svg {
-  color: theme(colors.gold);
+  color: var(--color-gold);
 }
 
 .intro_sec .text h1 {
   font-size: 30px;
   margin-bottom: 50px;
   font-weight: 700;
-  color: theme(colors.gold);
+  color: var(--color-gold);
 }
 
 .intro_sec .text h2 {
-  color: theme(colors.gold);
+  color: var(--color-gold);
 }
 
 .intro_sec .text h3 {
   font-size: 16px;
   font-weight: 700;
-  color: theme(colors.gold);
+  color: var(--color-gold);
 }
 
 .intro_sec .text p {
-  color: theme(colors.gold);
+  color: var(--color-gold);
 }
 
 .intro_sec .h_bg-image {
@@ -117,7 +115,7 @@ section {
   width: 250px;
   height: 220px;
   border-radius: 100%;
-  background-color: theme(colors.charcoal);
+  background-color: var(--color-charcoal);
   z-index: 9999999999;
   display: flex;
   align-items: center;
@@ -143,14 +141,14 @@ section {
 
 .intro_sec .h_bg-image .block .wrap-icon {
   font-size: 40px;
-  color: theme(colors.gold);
+  color: var(--color-gold);
   margin-bottom: 10px;
   display: block;
 }
 
 .intro_sec .h_bg-image .block h3 {
   font-size: 14px;
-  color: theme(colors.gold);
+  color: var(--color-gold);
   letter-spacing: 0.1rem;
   font-weight: 700;
   margin-bottom: 15px;
@@ -159,7 +157,7 @@ section {
 .intro_sec .h_bg-image .block p {
   font-size: 14px;
   line-height: 1.3;
-  color: theme(colors.gold);
+  color: var(--color-gold);
 }
 
 .intro_sec .h_bg-image {

@@ -25,8 +25,8 @@
   transform: translateY(-50%);
   z-index: 10;
   background: rgba(0, 0, 0, 0.6);
-  border: 1px solid theme(colors.gold);
-  color: theme(colors.gold);
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
   height: 60px;
   width: 50px;
   display: flex;
@@ -39,8 +39,8 @@
 
 .gallery-arrow:hover {
   background: rgba(0, 0, 0, 0.8);
-  color: theme(colors.white);
-  border-color: theme(colors.white);
+  color: var(--color-white);
+  border-color: var(--color-white);
 }
 
 .gallery-arrow-prev {

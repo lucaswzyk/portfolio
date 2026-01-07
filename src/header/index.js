@@ -12,11 +12,12 @@ const Headermain = () => {
   };
 
   return (
-    <Navbar fixed className="site__header">
+    <Navbar fixed>
       <div className="flex items-center justify-between w-full">
         <a
           href="/portfolio"
-          className="nav_ac"
+          className="px-4 py-1.5 m-0 border-0 bg-obsidian text-xl font-heading text-gold leading-loose h-12.5 font-bold hover:text-gold"
+          style={{zIndex: 1000}}
           onClick={handleLogoClick}
         >
           {t("logotext")}

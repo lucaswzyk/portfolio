@@ -12,8 +12,8 @@ const Themetoggle = () => {
     localStorage.setItem('theme', theme ); 
   }, [theme]);
   return (
-    <div className="nav_ac" onClick={themetoggle}>
-      <WiMoonAltWaningCrescent4 />
+    <div className="px-4 py-1.5 m-0 border-0 bg-obsidian text-xl font-heading text-gold leading-loose h-12.5 font-bold hover:text-gold flex items-center cursor-pointer" style={{zIndex: 1000}} onClick={themetoggle}>
+      <WiMoonAltWaningCrescent4 className="w-8 h-8" />
     </div>
   );
 };

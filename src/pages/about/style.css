@@ -8,12 +8,12 @@
   font-size: 16px;
   font-weight: 700;
   margin: 15px 0 20px;
-  font-family: theme(fontFamily.body);
+  font-family: var(--font-body);
 }
 
 .progress {
   height: 5px;
-  background: theme(colors.gold);
+  background: var(--color-gold);
   border-radius: 0;
   box-shadow: none;
   margin-bottom: 30px;
@@ -22,7 +22,7 @@
 
 .progress .progress-bar {
   position: relative;
-  background: theme(colors.gold);
+  background: var(--color-gold);
   animation: animate-positive 2s;
   overflow: visible;
   opacity: 0.9;
@@ -35,16 +35,7 @@
   font-size: 17px;
   font-weight: bold;
   font-style: italic;
-  color: theme(colors.gold);
-}
-
-@-webkit-keyframes animate-positive {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+  color: var(--color-gold);
 }
 
 @keyframes animate-positive {
@@ -62,22 +53,11 @@
 
 .service__title {
   padding: 8px 0;
-  border-bottom: solid 2px theme(colors.gold);
+  border-bottom: solid 2px var(--color-gold);
 }
 
 .service-section .service-category-title {
   padding-bottom: 4px;
-}
-
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translateZ(0);
-  }
 }
 
 @keyframes fadeInUp {

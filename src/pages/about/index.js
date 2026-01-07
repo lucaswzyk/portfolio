@@ -18,7 +18,7 @@ export const About = () => {
               <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
-          <Row className="sec_sp">
+          <Row className="mb-8">
             <Col span={layoutConfig.about.headerColWidth}>
               <h3 className="text-gold text-2xl py-4 font-heading">
                 {t("about.sections.information")}
@@ -46,7 +46,7 @@ export const About = () => {
               </p>
             </Col>
           </Row>
-          <Row className="sec_sp">
+          <Row className="mb-8">
             <Col span={layoutConfig.about.headerColWidth}>
               <h3 className="text-gold text-2xl py-4 font-heading">{t("about.title")}</h3>
             </Col>
@@ -56,7 +56,7 @@ export const About = () => {
               </div>
             </Col>
           </Row>
-          <Row className="sec_sp">
+          <Row className="mb-8">
             <Col span={layoutConfig.about.headerColWidth}>
               <h3 className="text-gold text-2xl py-4 font-heading">
                 {t("about.sections.recent_projects")}
@@ -93,7 +93,7 @@ export const About = () => {
               ))}
             </Col>
           </Row>
-          <Row className="sec_sp">
+          <Row className="mb-8">
             <Col span={layoutConfig.about.headerColWidth}>
               <h3 className="text-gold text-2xl py-4 font-heading">
                 {t("about.sections.skills")}
@@ -112,7 +112,7 @@ export const About = () => {
               </Row>
             </Col>
           </Row>
-          <Row className="sec_sp">
+          <Row className="mb-8">
             <Col span={layoutConfig.about.headerColWidth}>
               <h3 className="text-gold text-2xl py-4 font-heading">
                 {t("about.sections.languages")}
@@ -131,7 +131,7 @@ export const About = () => {
               </Row>
             </Col>
           </Row>
-          <Row className="sec_sp">
+          <Row className="mb-8">
             <Col span={layoutConfig.about.headerColWidth}>
               <h3 className="text-gold text-2xl py-4 font-heading">
                 {t("about.sections.interests")}

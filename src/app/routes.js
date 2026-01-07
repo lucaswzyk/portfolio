@@ -9,7 +9,7 @@ import {Socialicons} from "../components/socialicons";
 
 function AppRoutes() {
   return (
-      <div className="s_c">
+      <div>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>

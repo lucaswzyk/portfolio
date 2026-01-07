@@ -76,19 +76,19 @@ export const ContactUs = () => {
               <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
-          <Row className="sec_sp">
+          <Row className="mb-8">
             <Col className="col-span-12">
               {formData.show && (
                   <Alert
                       variant={formData.variant === "danger" ? "error" : formData.variant}
-                      className="co_alert mb-4"
+                      className="mb-4"
                   >
                     {formData.alertmessage}
                   </Alert>
               )}
             </Col>
             <Col className="col-span-12 lg:col-span-5 mb-5">
-              <h3 className="color_sec py-4">
+              <h3 className="text-gold text-2xl py-4 font-heading">
                 {t("contact.greeting")}
               </h3>
               <address>
@@ -113,7 +113,7 @@ export const ContactUs = () => {
               <p>{t("contact.description")}</p>
             </Col>
             <Col className="col-span-12 lg:col-span-7 flex items-center">
-              <form onSubmit={handleSubmit} className="contact__form w-full">
+              <form onSubmit={handleSubmit} className="w-full">
                 <Row className="mb-4">
                   <Col className="col-span-12 lg:col-span-6 mb-4">
                     <Input
@@ -161,7 +161,9 @@ export const ContactUs = () => {
             </Col>
           </Row>
         </Container>
-        <div className={formData.loading ? "loading-bar" : "hidden"}></div>
+        {formData.loading && (
+          <div className="fixed top-0 left-0 w-full h-1 bg-gold animate-pulse"></div>
+        )}
       </HelmetProvider>
   );
 };

@@ -14,17 +14,17 @@ export const Home = () => {
 
   return (
       <HelmetProvider>
-        <div className="home-container">
+        <div className="w-full">
           <Helmet>
             <meta charSet="utf-8"/>
             <title>{t("personalInfo.name")}</title>
             <meta name="description" content={t("meta.description")}/>
           </Helmet>
           {/* Home Section */}
-          <section id="home" className="home">
-            <div className="intro_sec block lg:flex items-center">
+          <section id="home" className="min-h-screen">
+            <div className="block lg:flex items-center">
               <div
-                  className="h_bg-image order-1 lg:order-2 h-full"
+                  className="order-1 lg:order-2 h-full lg:w-1/2"
                   style={{
                     backgroundImage: `url(${introdata.your_img_url})`,
                     backgroundPosition: "70% 30%",
@@ -32,11 +32,11 @@ export const Home = () => {
                   aria-label={t("intro.profile_image_alt")}
                   role="img"
               ></div>
-              <div className="text order-2 lg:order-1 h-full lg:flex justify-center">
+              <div className="order-2 lg:order-1 h-full lg:flex justify-center lg:w-1/2">
                 <div className="self-center">
-                  <div className="intro mx-auto">
+                  <div className="mx-auto max-w-md lg:max-w-2xl px-5 lg:px-0">
                     <h2 className="mb-4">{t("personalInfo.name")}</h2>
-                    <h1 className="fluidz-48 mb-4">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4">
                       <Typewriter
                           options={{
                             strings: [
@@ -52,7 +52,7 @@ export const Home = () => {
                       />
                     </h1>
                     <p className="mb-4">{t("intro.description")}</p>
-                    <div className="intro_btn-action">
+                    <div className="flex flex-wrap gap-5">
                       <a href="/#gallery" onClick={(e) => {
                         e.preventDefault();
                         document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});
@@ -78,7 +78,7 @@ export const Home = () => {
                         </Button>
                       </a>
                     </div>
-                    <div className="intro_btn-action pb-5 mt-3">
+                    <div className="flex flex-wrap gap-5 pb-5 mt-3">
                       <a href={personalInfo.resume_url} target="_blank" rel="noopener noreferrer">
                         <Button id="button_resume">
                           {t("download_resume")}
@@ -92,17 +92,17 @@ export const Home = () => {
           </section>
 
           {/* Gallery Section */}
-          <section id="gallery" className="gallery">
+          <section id="gallery" className="min-h-screen">
             <Gallery/>
           </section>
 
           {/* About Me Section */}
-          <section id="about" className="about">
+          <section id="about" className="min-h-screen">
             <About/>
           </section>
 
           {/* Contact Section */}
-          <section id="contact" className="contact">
+          <section id="contact" className="min-h-screen">
             <ContactUs/>
           </section>
         </div>
