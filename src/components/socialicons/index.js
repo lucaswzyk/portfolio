@@ -68,7 +68,7 @@ export const Socialicons = () => {
               </li>
           )}
         </ul>
-        <p>{t("social.follow_me")}</p>
+        <p className="text-gold">{t("social.follow_me")}</p>
       </div>
   );
 };
