@@ -3,6 +3,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import AppRoutes from "./routes";
 import Headermain from "../header";
 import Footer from "../components/footer";
+import ScrollToTop from "../components/ScrollToTop";
 // import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
 // Import i18n configuration
@@ -11,6 +12,7 @@ import "../i18n/i18n";
 export default function App() {
   return (
       <Router>
+        <ScrollToTop/>
         {/* <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}
