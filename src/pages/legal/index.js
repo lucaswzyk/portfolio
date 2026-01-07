@@ -1,7 +1,6 @@
 import React from "react";
-import "./style.css";
 import {Helmet, HelmetProvider} from "@dr.pogodin/react-helmet";
-import {Card, Col, Container, Row} from "react-bootstrap";
+import {Container, Stack} from "@lukeashford/aurelius";
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import Button from "../../components/Button";
@@ -12,42 +11,54 @@ export const LegalNotice = () => {
 
   return (
       <HelmetProvider>
-        <Container className="legal-notice">
+        <div className="min-h-screen bg-obsidian text-white px-5 py-10 md:px-10 lg:px-16"
+             style={{paddingTop: 'calc(var(--header-height) + 2.5rem)'}}>
           <Helmet>
             <meta charSet="utf-8"/>
             <title>{t("legal.title")}</title>
             <meta name="description" content={t("legal.meta_description")}/>
           </Helmet>
 
-          <Row
-              className="mb-5 mt-3 pt-md-3 align-items-center justify-content-between gap-3 gap-md-0">
-            <Col xs="12" md="7">
-              <h1 className="display-4 mb-2">{t("legal.title")}</h1>
-              <p className="text-muted mb-0">{t("legal.subtitle")}</p>
-            </Col>
-            <Col xs="12" md="auto" className="text-md-end">
-              <Link to="/">
-                <Button className="back-button">{t("legal.back_home")}</Button>
-              </Link>
-            </Col>
-          </Row>
+          <Container size="lg">
+            <Stack direction="vertical" gap="8">
+              <Stack direction="horizontal" justify="between" align="center" wrap className="gap-4">
+                <Stack direction="vertical" gap="2">
+                  <h1 className="text-3xl font-semibold leading-tight md:text-4xl text-white">
+                    {t("legal.title")}
+                  </h1>
+                  <p className="text-silver text-base leading-relaxed mb-0">
+                    {t("legal.subtitle")}
+                  </p>
+                </Stack>
 
-          <Card className="p-4 legal-card">
-            <div className="legal-section mb-4">
-              <p className="legal-name mb-2">{legalNotice.name}</p>
-              <p className="mb-1">{legalNotice.street}</p>
-              <p className="mb-0">{legalNotice.city}</p>
-            </div>
+                <Link to="/" className="self-start sm:self-auto">
+                  <Button
+                      variant="ghost"
+                      className="inline-flex items-center gap-2  border border-ash/30 bg-transparent px-4 py-2 text-sm font-semibold text-white transition hover:border-ash/50 hover:bg-ash/10">
+                    {t("legal.back_home")}
+                  </Button>
+                </Link>
+              </Stack>
 
-            <div className="legal-section border-top pt-3">
-              <p className="mb-0">
-                {t("legal.contact")}: {" "}
-                <a href={`mailto:${legalNotice.email}`}
-                   className="legal-link">{legalNotice.email}</a>
-              </p>
-            </div>
-          </Card>
-        </Container>
+              <div
+                  className="space-y-6 2xl border border-ash/35 bg-charcoal/90 p-8 text-white shadow-2xl md:p-10">
+                <Stack direction="vertical" gap="2" className="text-silver">
+                  <p className="text-lg font-semibold text-white md:text-xl mb-0">{legalNotice.name}</p>
+                  <p className="mb-1 leading-relaxed">{legalNotice.street}</p>
+                  <p className="mb-0 leading-relaxed">{legalNotice.city}</p>
+                </Stack>
+
+                <div className="border-t border-ash/30 pt-4">
+                  <p className="mb-0 text-silver leading-relaxed">
+                    {t("legal.contact")}: {" "}
+                    <a href={`mailto:${legalNotice.email}`}
+                       className="font-medium text-gold underline-offset-2 hover:text-gold-bright hover:underline">{legalNotice.email}</a>
+                  </p>
+                </div>
+              </div>
+            </Stack>
+          </Container>
+        </div>
       </HelmetProvider>
   );
 };

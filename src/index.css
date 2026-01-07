@@ -4,6 +4,11 @@
 /* Tell Tailwind to scan the Aurelius package for utility classes */
 @source "../node_modules/@lukeashford/aurelius/dist";
 
+/* CSS Custom Properties */
+:root {
+  --header-height: 70px;
+}
+
 /* Base styles */
 html {
   height: 100%;

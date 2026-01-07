@@ -42,7 +42,7 @@ const contactConfig = {
 
 const legalNotice = {
   name: "Lucas Waclawczyk",
-  street: "Am Rehwinkel",
+  street: "Am Rehwinkel 2a",
   city: "14548 Schwielowsee, Germany",
   email: "luke@lukeashford.com"
 };

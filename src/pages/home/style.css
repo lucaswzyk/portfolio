@@ -31,9 +31,9 @@ section {
 }
 
 .intro_sec {
-  height: 100vh;
+  height: calc(100vh - var(--header-height));
   min-height: 700px;
-  margin-top: -70px;
+  margin-top: var(--header-height);
   padding-top: 0;
 }
 
@@ -175,7 +175,6 @@ html {
   flex-direction: column;
 }
 
-.home,
 .gallery,
 .about,
 .contact {
