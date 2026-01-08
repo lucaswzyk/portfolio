@@ -29,10 +29,8 @@ section {
 }
 
 .intro_sec {
-  height: calc(100vh - var(--header-height));
+  height: 100vh;
   min-height: 700px;
-  margin-top: var(--header-height);
-  padding-top: 0;
 }
 
 @media (max-width: 991.98px) {
