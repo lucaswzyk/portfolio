@@ -4,11 +4,6 @@
 /* Tell Tailwind to scan the Aurelius package for utility classes */
 @source "../node_modules/@lukeashford/aurelius/dist";
 
-/* CSS Custom Properties */
-:root {
-  /* Header is transparent, no height offset needed */
-}
-
 /* Base styles */
 html {
   height: 100%;
