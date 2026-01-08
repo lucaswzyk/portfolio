@@ -21,20 +21,10 @@ export const Home = () => {
             <meta name="description" content={t("meta.description")}/>
           </Helmet>
           {/* Home Section */}
-          <section id="home" className="min-h-screen">
-            <div className="block lg:flex items-center">
-              <div
-                  className="order-1 lg:order-2 h-full lg:w-1/2"
-                  style={{
-                    backgroundImage: `url(${introdata.your_img_url})`,
-                    backgroundPosition: "70% 30%",
-                  }}
-                  aria-label={t("intro.profile_image_alt")}
-                  role="img"
-              ></div>
-              <div className="order-2 lg:order-1 h-full lg:flex justify-center lg:w-1/2">
-                <div className="self-center">
-                  <div className="mx-auto max-w-md lg:max-w-2xl px-5 lg:px-0">
+          <section id="home" className="flex items-center" style={{height: 'calc(100vh - var(--header-height))', minHeight: '700px', marginTop: 'var(--header-height)', paddingTop: 0}}>
+            <div className="flex flex-col lg:flex-row w-full h-full">
+              <div className="order-2 lg:order-1 w-full lg:w-1/2 h-auto lg:h-full flex justify-center items-center py-10 lg:py-0">
+                <div className="w-full max-w-md mx-auto px-5 lg:px-8">
                     <h2 className="mb-4">{t("personalInfo.name")}</h2>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl mb-4">
                       <Typewriter
@@ -87,7 +77,16 @@ export const Home = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              <div
+                  className="order-1 lg:order-2 w-full lg:w-1/2 h-96 lg:h-full bg-cover bg-center relative"
+                  style={{
+                    backgroundImage: `url(${introdata.your_img_url})`,
+                    backgroundPosition: "70% 30%",
+                    minHeight: '700px'
+                  }}
+                  aria-label={t("intro.profile_image_alt")}
+                  role="img"
+              ></div>
             </div>
           </section>
 
