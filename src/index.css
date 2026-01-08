@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
   overflow-y: visible;
   padding-top: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   background-color: var(--color-obsidian);
   color: var(--color-white);
   font-family: var(--font-body);

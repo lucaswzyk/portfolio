@@ -7,7 +7,7 @@ const Button = ({
   onClick,
   className = "",
   disabled = false,
-  variant = "primary",
+  variant = "outlined",
   ...props
 }) => {
   return (

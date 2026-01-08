@@ -15,59 +15,62 @@ export const Socialicons = () => {
   const {t} = useTranslation();
 
   return (
-      <div className="fixed right-5 top-1/2 -translate-y-1/2 w-5 h-52 flex flex-col items-center justify-center" style={{zIndex: 999}}>
-        <ul>
+      <div className="fixed left-8 top-1/2 -translate-y-1/2 flex flex-col items-center" style={{zIndex: 999}}>
+        <ul className="list-none p-0 m-0 mb-2.5">
           {socialprofiles.twitter && (
-              <li>
+              <li className="block text-center mb-2.5">
                 <a href={socialprofiles.twitter}>
-                  <FaTwitter/>
+                  <FaTwitter className="w-5 h-5 fill-gold"/>
                 </a>
               </li>
           )}
           {socialprofiles.github && (
-              <li>
+              <li className="block text-center mb-2.5">
                 <a href={socialprofiles.github}>
-                  <FaGithub/>
+                  <FaGithub className="w-5 h-5 fill-gold"/>
                 </a>
               </li>
           )}
           {socialprofiles.facebook && (
-              <li>
+              <li className="block text-center mb-2.5">
                 <a href={socialprofiles.facebook}>
-                  <FaFacebookF/>
+                  <FaFacebookF className="w-5 h-5 fill-gold"/>
                 </a>
               </li>
           )}
           {socialprofiles.linkedin && (
-              <li>
+              <li className="block text-center mb-2.5">
                 <a href={socialprofiles.linkedin}>
-                  <FaLinkedin/>
+                  <FaLinkedin className="w-5 h-5 fill-gold"/>
                 </a>
               </li>
           )}
           {socialprofiles.youtube && (
-              <li>
+              <li className="block text-center mb-2.5">
                 <a href={socialprofiles.youtube}>
-                  <FaYoutube/>
+                  <FaYoutube className="w-5 h-5 fill-gold"/>
                 </a>
               </li>
           )}
           {socialprofiles.twitch && (
-              <li>
+              <li className="block text-center mb-2.5">
                 <a href={socialprofiles.twitch}>
-                  <FaTwitch/>
+                  <FaTwitch className="w-5 h-5 fill-gold"/>
                 </a>
               </li>
           )}
           {socialprofiles.insta && (
-              <li>
+              <li className="block text-center mb-2.5">
                 <a href={socialprofiles.insta}>
-                  <FaInstagram/>
+                  <FaInstagram className="w-5 h-5 fill-gold"/>
                 </a>
               </li>
           )}
         </ul>
-        <p className="text-gold">{t("social.follow_me")}</p>
+        <p className="text-gold text-xs font-semibold whitespace-nowrap relative -rotate-90" style={{top: '70px', left: '-24px', width: '68px', height: '20px'}}>
+          {t("social.follow_me")}
+          <span className="absolute block w-10 h-px bg-gold" style={{top: '9px', right: '-48px'}}></span>
+        </p>
       </div>
   );
 };
