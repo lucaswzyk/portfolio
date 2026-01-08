@@ -22,14 +22,6 @@ Start the server
 
 <pre>npm start</pre>
 
-### Deployment
-
-This site is configured to deploy to GitHub Pages using GitHub Actions. The deployment workflow is
-defined in `.github/workflows/deploy.yml`.
-
-The site uses HashRouter for navigation, which is compatible with GitHub Pages. This ensures that
-all routes work correctly when deployed to GitHub Pages.
-
 ### Content Management
 
 #### Text Content
@@ -54,8 +46,6 @@ Non-text content (image URLs, email service configuration, etc.) is managed in
 ### Development Notes
 
 - The site uses React Router with HashRouter for navigation
-- The deployment workflow builds the site and deploys it to the gh-pages branch
-- Custom domain configuration is handled by adding a CNAME file to the build directory
 - Internationalization is implemented using i18next and react-i18next
 - All user-facing text should be accessed through the i18n system using the `t()` function
 
