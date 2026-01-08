@@ -6,7 +6,7 @@ const Footer = () => {
   const {t} = useTranslation();
 
   return (
-      <footer className="mt-20 py-10 border-t border-ash/20 text-gold bg-transparent">
+      <footer className="py-4 border-t border-ash/20 text-gold bg-transparent">
         <div className="flex justify-between items-center gap-4 flex-wrap px-5 md:flex-row flex-col md:items-center items-start">
           <div className="flex-1 min-w-60">
             <p>

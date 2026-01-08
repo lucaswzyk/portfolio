@@ -101,7 +101,7 @@ export const Home = () => {
           </section>
 
           {/* Contact Section */}
-          <section id="contact" className="min-h-screen">
+          <section id="contact" className="py-10">
             <ContactUs/>
           </section>
         </div>
