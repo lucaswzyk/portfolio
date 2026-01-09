@@ -26,7 +26,7 @@ export const Gallery = () => {
 
   return (
       <HelmetProvider>
-        <Container>
+        <Container className="px-4 md:px-16 2xl:px-8">
           <Row className="mb-5 mt-3 md:pt-3">
             <Col className="col-span-12">
               <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.gallery")}</h1>

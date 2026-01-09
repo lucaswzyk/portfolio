@@ -22,63 +22,64 @@ export const Home = () => {
           </Helmet>
           {/* Home Section */}
           <section id="home" className="flex items-center h-screen">
-            <div className="flex flex-col lg:flex-row w-full h-full">
-              <div className="order-2 lg:order-1 w-full lg:w-1/2 h-auto lg:h-full flex justify-center items-center py-10 lg:py-0 lg:pl-32">
-                <div className="w-full max-w-md px-5 lg:px-8">
-                    <h2 className="mb-4 text-2xl">{t("personalInfo.name")}</h2>
-                    <h1 className="mb-4 text-2xl">
-                      <Typewriter
-                          options={{
-                            strings: [
-                              t("intro.animated.first"),
-                              t("intro.animated.second"),
-                              t("intro.animated.third"),
-                            ],
-                            autoStart: true,
-                            loop: true,
-                            delay: 40,
-                            deleteSpeed: 10,
-                          }}
-                      />
-                    </h1>
-                    <p className="mb-4">{t("intro.description")}</p>
-                    <div className="flex flex-wrap gap-5">
-                      <a href="/#gallery" onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});
-                      }}>
-                        <Button id="button_gallery">
-                          {t("navigation.gallery")}
-                        </Button>
-                      </a>
-                      <a href="/#about" onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('about').scrollIntoView({behavior: 'smooth'});
-                      }}>
-                        <Button id="button_about">
-                          {t("navigation.about")}
-                        </Button>
-                      </a>
-                      <a href="/#contact" onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
-                      }}>
-                        <Button id="button_contact">
-                          {t("navigation.contact")}
-                        </Button>
-                      </a>
-                    </div>
-                    <div className="flex flex-wrap gap-5 pb-5 mt-3">
-                      <a href={personalInfo.resume_url} target="_blank" rel="noopener noreferrer">
-                        <Button id="button_resume">
-                          {t("download_resume")}
-                        </Button>
-                      </a>
-                    </div>
+            <div className="flex flex-col xl:flex-row w-full h-full">
+              <div
+                  className="order-2 xl:order-1 w-full xl:w-1/2 h-auto xl:h-full flex justify-center items-center py-10 xl:py-0 xl:pl-32">
+                <div className="w-full max-w-md px-10 md:px-16 xl:px-8">
+                  <h2 className="mb-4 text-2xl">{t("personalInfo.name")}</h2>
+                  <h1 className="mb-4 text-2xl">
+                    <Typewriter
+                        options={{
+                          strings: [
+                            t("intro.animated.first"),
+                            t("intro.animated.second"),
+                            t("intro.animated.third"),
+                          ],
+                          autoStart: true,
+                          loop: true,
+                          delay: 40,
+                          deleteSpeed: 10,
+                        }}
+                    />
+                  </h1>
+                  <p className="mb-4">{t("intro.description")}</p>
+                  <div className="flex flex-wrap gap-5">
+                    <a href="/#gallery" onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('gallery').scrollIntoView({behavior: 'smooth'});
+                    }}>
+                      <Button id="button_gallery">
+                        {t("navigation.gallery")}
+                      </Button>
+                    </a>
+                    <a href="/#about" onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('about').scrollIntoView({behavior: 'smooth'});
+                    }}>
+                      <Button id="button_about">
+                        {t("navigation.about")}
+                      </Button>
+                    </a>
+                    <a href="/#contact" onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+                    }}>
+                      <Button id="button_contact">
+                        {t("navigation.contact")}
+                      </Button>
+                    </a>
+                  </div>
+                  <div className="flex flex-wrap gap-5 pb-5 mt-3">
+                    <a href={personalInfo.resume_url} target="_blank" rel="noopener noreferrer">
+                      <Button id="button_resume">
+                        {t("download_resume")}
+                      </Button>
+                    </a>
                   </div>
                 </div>
+              </div>
               <div
-                  className="order-1 lg:order-2 w-full lg:w-1/2 h-96 lg:h-full bg-cover bg-center relative"
+                  className="order-1 xl:order-2 w-full xl:w-1/2 h-96 xl:h-full bg-cover bg-center relative"
                   style={{
                     backgroundImage: `url(${introdata.your_img_url})`,
                     backgroundPosition: "70% 30%",

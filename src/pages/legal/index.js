@@ -11,7 +11,7 @@ export const LegalNotice = () => {
 
   return (
       <HelmetProvider>
-        <div className="bg-obsidian text-white px-5 py-20 md:px-10 lg:px-16 flex-grow">
+        <div className="bg-obsidian text-white px-4 md:px-16 2xl:px-8 py-20 grow">
           <Helmet>
             <meta charSet="utf-8"/>
             <title>{t("legal.title")}</title>

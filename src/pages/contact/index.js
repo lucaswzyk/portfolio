@@ -69,7 +69,7 @@ export const ContactUs = () => {
 
   return (
       <HelmetProvider>
-        <Container>
+        <Container className="px-4 md:px-16 2xl:px-8">
           <Row className="mb-5 mt-3 md:pt-3">
             <Col className="col-span-12">
               <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.contact")}</h1>
@@ -87,7 +87,7 @@ export const ContactUs = () => {
                   </Alert>
               )}
             </Col>
-            <Col className="col-span-12 lg:col-span-5 mb-5">
+            <Col className="col-span-12 xl:col-span-5 mb-5">
               <h3 className="text-gold text-2xl py-4 font-heading">
                 {t("contact.greeting")}
               </h3>
@@ -112,10 +112,10 @@ export const ContactUs = () => {
               </address>
               <p>{t("contact.description")}</p>
             </Col>
-            <Col className="col-span-12 lg:col-span-7 flex items-center">
+            <Col className="col-span-12 xl:col-span-7 flex items-center">
               <form onSubmit={handleSubmit} className="w-full">
                 <Row className="mb-4">
-                  <Col className="col-span-12 lg:col-span-6 mb-4">
+                  <Col className="col-span-12 xl:col-span-6 mb-4">
                     <Input
                         id="name"
                         name="name"
@@ -126,7 +126,7 @@ export const ContactUs = () => {
                         onChange={handleChange}
                     />
                   </Col>
-                  <Col className="col-span-12 lg:col-span-6 mb-4">
+                  <Col className="col-span-12 xl:col-span-6 mb-4">
                     <Input
                         id="email"
                         name="email"
@@ -162,7 +162,7 @@ export const ContactUs = () => {
           </Row>
         </Container>
         {formData.loading && (
-          <div className="fixed top-0 left-0 w-full h-1 bg-gold animate-pulse"></div>
+            <div className="fixed top-0 left-0 w-full h-1 bg-gold animate-pulse"></div>
         )}
       </HelmetProvider>
   );

@@ -11,7 +11,7 @@ export const About = () => {
 
   return (
       <HelmetProvider>
-        <Container>
+        <Container className="px-4 md:px-16 2xl:px-8">
           <Row className="mb-5 mt-3 md:pt-3">
             <Col span={layoutConfig.about.fullWidthColWidth}>
               <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.about")}</h1>
@@ -66,7 +66,8 @@ export const About = () => {
               {Object.keys(t('project_categories', {returnObjects: true}))
               .map((category, index) => (
                   <div key={index} className="mb-5">
-                    <h4 className="text-gold text-xl mb-3 font-semibold">{t(`project_categories.${category}`)}</h4>
+                    <h4 className="text-gold text-xl mb-3 font-semibold">{t(
+                        `project_categories.${category}`)}</h4>
                     <Table responsive className="text-white">
                       <thead>
                       <tr>

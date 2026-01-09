@@ -15,7 +15,8 @@ export const Socialicons = () => {
   const {t} = useTranslation();
 
   return (
-      <div className="fixed left-8 top-1/2 -translate-y-1/2 flex flex-col items-center z-50">
+      <div
+          className="hidden md:flex fixed left-0 top-1/2 -translate-y-1/2 flex-col items-center z-50">
         <ul className="list-none p-0 m-0">
           {socialprofiles.twitter && (
               <li className="block text-center mb-2.5">
