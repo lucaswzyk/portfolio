@@ -12,20 +12,12 @@ import "../i18n/i18n";
 export default function App() {
   return (
       <Router>
-        <ScrollToTop/>
-        {/* <div className="cursor__dot">
-        <AnimatedCursor
-          innerSize={15}
-          outerSize={15}
-          color="255, 255 ,255"
-          outerAlpha={0.4}
-          innerScale={0.7}
-          outerScale={5}
-        />
-      </div> */}
-        <Headermain/>
-        <AppRoutes/>
-        <Footer/>
+        <div className="flex flex-col min-h-screen">
+          <ScrollToTop/>
+          <Headermain/>
+          <AppRoutes/>
+          <Footer/>
+        </div>
       </Router>
   );
 }

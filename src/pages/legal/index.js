@@ -11,8 +11,7 @@ export const LegalNotice = () => {
 
   return (
       <HelmetProvider>
-        <div className="bg-obsidian text-white px-5 py-10 md:px-10 lg:px-16"
-             style={{paddingTop: 'calc(var(--header-height) + 2.5rem)'}}>
+        <div className="bg-obsidian text-white px-5 py-20 md:px-10 lg:px-16 flex-grow">
           <Helmet>
             <meta charSet="utf-8"/>
             <title>{t("legal.title")}</title>

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -6,18 +6,20 @@ const Footer = () => {
   const {t} = useTranslation();
 
   return (
-      <footer className="py-4 border-t border-ash/20 text-gold bg-transparent">
-        <div className="flex justify-between items-center gap-4 flex-wrap px-5 md:flex-row flex-col md:items-center items-start">
-          <div className="flex-1 min-w-60">
+      <footer className="px-6 mt-20 py-6 text-silver/60 text-sm">
+        <div className="flex flex-col md:flex-row justify-between gap-4">
+          <div>
             <p>
               &copy; {new Date().getFullYear()} <a href="https://lukeashford.com" target="_blank"
                                                    rel="noopener noreferrer"
-                                                   className="text-gold no-underline transition-colors duration-200 hover:text-gold-bright hover:underline">Luke Ashford</a>. {t(
+                                                   className="text-gold no-underline transition-colors duration-200 hover:text-gold-bright hover:underline">Luke
+              Ashford</a>. {t(
                 "legal.footer.all_rights")}
             </p>
           </div>
-          <div className="text-right flex-none md:text-right text-left">
-            <Link to="/legal" className="text-gold no-underline transition-colors duration-200 hover:text-gold-bright hover:underline font-semibold">
+          <div className="text-right">
+            <Link to="/legal"
+                  className="text-silver/80 no-underline transition-colors duration-200 hover:text-gold hover:underline">
               {t("legal.notice_link")}
             </Link>
           </div>
