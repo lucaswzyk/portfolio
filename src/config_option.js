@@ -34,6 +34,8 @@ const pics_landscape = [
   "https://i.postimg.cc/52zVLqt9/2-C3-A5215-2.jpg"
 ];
 
+const youtube_url = "https://youtu.be/Oe6I6fAhNDw";
+
 const contactConfig = {
   YOUR_SERVICE_ID: "service_qupx2vr",
   YOUR_TEMPLATE_ID: "template_hv9i2jq",
@@ -65,6 +67,7 @@ export {
   introdata,
   pics_portrait,
   pics_landscape,
+  youtube_url,
   contactConfig,
   socialprofiles,
   legalNotice,

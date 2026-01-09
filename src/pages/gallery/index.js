@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import "./style.css";
 import {HelmetProvider} from "@dr.pogodin/react-helmet";
-import {Card, Col, Container, Modal, Row} from "@lukeashford/aurelius";
-import {pics_landscape, pics_portrait} from "../../config_option"; // Import for the image URLs
+import {Card, Col, Container, Modal, Row, VideoCard} from "@lukeashford/aurelius";
+import {pics_landscape, pics_portrait, youtube_url} from "../../config_option"; // Import for the
+                                                                                // image URLs
 import {useTranslation} from "react-i18next";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
-import ReactPlayer from "react-player";
 import {FiChevronLeft, FiChevronRight} from "react-icons/fi";
 
 export const Gallery = () => {
@@ -36,15 +36,9 @@ export const Gallery = () => {
           {/* YouTube Video Section */}
           <Row className="mb-5">
             <Col className="col-span-12">
-              <div className="relative w-full max-w-full max-h-full h-screen" style={{paddingBottom: '56.25%'}}>
-                <ReactPlayer
-                    className="absolute top-0 left-0 w-full h-full"
-                    url="https://youtu.be/Oe6I6fAhNDw"
-                    width="100%"
-                    height="100%"
-                    controls
-                />
-              </div>
+              <VideoCard
+                  src={youtube_url}
+              />
             </Col>
           </Row>
           {/* Separator Line */}
