@@ -21,8 +21,8 @@ export const Home = () => {
             <meta name="description" content={t("meta.description")}/>
           </Helmet>
           {/* Home Section */}
-          <section id="home" className="flex items-center h-screen">
-            <div className="flex flex-col xl:flex-row w-full h-full">
+          <section id="home" className="flex items-center min-h-screen">
+            <div className="flex flex-col xl:flex-row w-full min-h-screen">
               <div
                   className="order-2 xl:order-1 w-full xl:w-1/2 h-auto xl:h-full flex justify-center items-center py-10 xl:py-0 xl:pl-32">
                 <div className="w-full max-w-md px-10 md:px-16 xl:px-8">
