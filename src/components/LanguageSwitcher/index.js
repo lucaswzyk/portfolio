@@ -10,21 +10,21 @@ const LanguageSwitcher = () => {
     localStorage.setItem('i18nextLng', lng);
   };
 
+  const isLang = (lng) => i18n.language?.startsWith(lng);
+
   return (
       <div className="flex items-center gap-2">
         <Button
-            variant={i18n.language === 'en' ? 'primary' : 'outlined'}
+            variant={isLang('en') ? 'primary' : 'outlined'}
             size="sm"
             onClick={() => changeLanguage('en')}
-            className={i18n.language !== 'en' ? 'text-ash hover:text-white' : ''}
         >
           English
         </Button>
         <Button
-            variant={i18n.language === 'de' ? 'primary' : 'outlined'}
+            variant={isLang('de') ? 'primary' : 'outlined'}
             size="sm"
             onClick={() => changeLanguage('de')}
-            className={i18n.language !== 'de' ? 'text-ash hover:text-white' : ''}
         >
           German
         </Button>
