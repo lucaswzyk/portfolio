@@ -12,7 +12,7 @@ const Headermain = () => {
   };
 
   return (
-    <Navbar fixed className="bg-transparent border-0 py-2">
+    <Navbar fixed bordered={false} className="bg-transparent py-2">
       <div className="flex items-center justify-between w-full">
         <Button
           variant="ghost"

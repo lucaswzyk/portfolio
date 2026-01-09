@@ -16,6 +16,7 @@ const LanguageSwitcher = () => {
             variant={i18n.language === 'en' ? 'primary' : 'outlined'}
             size="sm"
             onClick={() => changeLanguage('en')}
+            className={i18n.language !== 'en' ? 'text-ash hover:text-white' : ''}
         >
           English
         </Button>
@@ -23,6 +24,7 @@ const LanguageSwitcher = () => {
             variant={i18n.language === 'de' ? 'primary' : 'outlined'}
             size="sm"
             onClick={() => changeLanguage('de')}
+            className={i18n.language !== 'de' ? 'text-ash hover:text-white' : ''}
         >
           German
         </Button>
