@@ -55,7 +55,7 @@
   "devDependencies": {
     "@eslint/css": "^0.9.0",
     "@poupe/eslint-plugin-tailwindcss": "^0.2.4",
-    "@tailwindcss/postcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.3",
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/parser": "^8.50.0",
