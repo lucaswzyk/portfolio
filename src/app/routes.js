@@ -2,7 +2,7 @@ import React from "react";
 import {Route, Routes} from "react-router-dom";
 import {Home} from "../pages/home";
 import {LegalNotice} from "../pages/legal";
-import {Socialicons} from "../components/socialicons";
+import {SocialIcons} from "../components/socialicons";
 
 function AppRoutes() {
   return (
@@ -12,7 +12,10 @@ function AppRoutes() {
           <Route path="/legal" element={<LegalNotice/>}/>
           <Route path="*" element={<Home/>}/>
         </Routes>
-        <Socialicons/>
+        <SocialIcons
+            vertical
+            className="hidden md:flex fixed left-8 top-1/2 -translate-y-1/2 z-50"
+        />
       </div>
   );
 }

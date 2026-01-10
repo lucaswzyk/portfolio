@@ -14,8 +14,8 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: visible;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: var(--color-obsidian);
   color: var(--color-white);
   font-family: var(--font-body);
@@ -33,6 +33,10 @@ p {
 
 .ovhidden {
   overflow: hidden;
+}
+
+@utility writing-vertical {
+  writing-mode: vertical-lr;
 }
 
 code {
