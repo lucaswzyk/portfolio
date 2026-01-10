@@ -40,7 +40,7 @@ export const LegalNotice = () => {
               </Stack>
 
               <div
-                  className="space-y-6 rounded-2xl border border-ash/35 bg-charcoal/90 p-8 text-white shadow-2xl md:p-10">
+                  className="space-y-6 border border-ash/35 bg-charcoal/90 p-8 text-white shadow-2xl md:p-10">
                 <Stack direction="vertical" gap="2" className="text-silver">
                   <p className="text-lg font-semibold text-white md:text-xl mb-0">{legalNotice.name}</p>
                   <p className="mb-1 leading-relaxed">{legalNotice.street}</p>
