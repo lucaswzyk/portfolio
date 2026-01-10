@@ -4,13 +4,13 @@ const StarRating = ({ fullStars }) => {
   const starElements = [];
   for (let i = 0; i < fullStars; i++) {
     starElements.push(
-      <span key={i} className="star filled">
+      <span key={i} className="text-gold text-2xl">
         &#9733;
       </span>
     );
   }
 
-  return <div className="star-rating">{starElements}</div>;
+  return <div className="flex gap-1">{starElements}</div>;
 };
 
 export default StarRating;

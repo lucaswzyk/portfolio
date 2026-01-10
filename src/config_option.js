@@ -34,6 +34,8 @@ const pics_landscape = [
   "https://i.postimg.cc/52zVLqt9/2-C3-A5215-2.jpg"
 ];
 
+const youtube_url = "https://youtu.be/Oe6I6fAhNDw";
+
 const contactConfig = {
   YOUR_SERVICE_ID: "service_qupx2vr",
   YOUR_TEMPLATE_ID: "template_hv9i2jq",
@@ -42,7 +44,7 @@ const contactConfig = {
 
 const legalNotice = {
   name: "Lucas Waclawczyk",
-  street: "Am Rehwinkel",
+  street: "Am Rehwinkel 2a",
   city: "14548 Schwielowsee, Germany",
   email: "luke@lukeashford.com"
 };
@@ -54,9 +56,9 @@ const socialprofiles = {
 // Layout configuration for responsive design
 const layoutConfig = {
   about: {
-    fullWidthColWidth: "12",
-    headerColWidth: "3",
-    contentColWidth: "9"
+    fullWidthColWidth: 12,
+    headerColWidth: 12,
+    contentColWidth: 12
   }
 };
 
@@ -65,6 +67,7 @@ export {
   introdata,
   pics_portrait,
   pics_landscape,
+  youtube_url,
   contactConfig,
   socialprofiles,
   legalNotice,

@@ -1,15 +1,11 @@
-:root {
-  --bg-color: #0c0c0c;
-  --primary-color: #0d0d0d;
-  --secondary-color: #fecb6b;
-  --text-color: #fecb6b;
-  --text-color-2: #fecb6b;
-  --text-color-3: #fecb6b;
-  --overlay-color: rgb(12 12 12 / 63%);
-}
+/* Import the complete Aurelius design system (includes Tailwind v4, fonts, and theme) */
+@import '@lukeashford/aurelius/styles/base.css';
 
-html,
-body {
+/* Tell Tailwind to scan the Aurelius package for utility classes */
+@source "../node_modules/@lukeashford/aurelius/dist";
+
+/* Base styles */
+html {
   height: 100%;
 }
 
@@ -18,33 +14,15 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: visible;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-top: 0px;
-  padding-bottom: 50px;
-  border-left: 0px solid var(--primary-color);
-  border-right: 0px solid var(--primary-color);
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--color-obsidian);
+  color: var(--color-white);
+  font-family: var(--font-body);
 }
 
 ul {
   list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Marcellus;
-}
-
-a,
-a:hover {
-  color: var(--text-color);
 }
 
 p {
@@ -57,14 +35,13 @@ p {
   overflow: hidden;
 }
 
-.text_2,
-.text_2:hover {
-  color: var(--text-color-2);
+@utility writing-vertical {
+  writing-mode: vertical-lr;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
 }
 
 .cursor__dot div {
@@ -72,18 +49,10 @@ code {
 }
 
 .cursor__dot div:last-child {
-  background-color: var(--text-color-3) !important;
+  background-color: var(--color-gold) !important;
 }
 
 .cursor__dot div:first-child {
   filter: invert(1);
-  background-color: var(--overlay-color) !important;
-}
-
-.color_pr {
-  color: var(--primary-color) !important;
-}
-
-.color_sec {
-  color: var(--secondary-color);
+  background-color: color-mix(in srgb, var(--color-obsidian) 90%, transparent) !important;
 }

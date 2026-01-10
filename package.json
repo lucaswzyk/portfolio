@@ -3,36 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://lukeashford.com",
+  "type": "module",
   "dependencies": {
+    "@dr.pogodin/react-helmet": "^3.0.4",
+    "@emailjs/browser": "^4.0.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@lukeashford/aurelius": "^2.8.0",
     "@mui/material": "^5.16.0",
     "bootstrap": "^5.2.3",
-    "emailjs-com": "^3.2.0",
     "i18next": "^22.4.15",
     "i18next-browser-languagedetector": "^7.0.1",
-    "react": "^18.2.0",
+    "react": "^19.2.3",
     "react-bootstrap": "^2.7.0",
-    "react-dom": "^18.2.0",
-    "react-helmet-async": "^1.0.7",
+    "react-dom": "^19.2.3",
     "react-i18next": "^12.2.2",
     "react-icons": "^4.1.0",
-    "react-player": "^2.16.0",
     "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.6.2",
-    "react-scripts": "^5.0.1",
+    "react-router-dom": "^7.1.1",
     "react-transition-group": "^4.4.2",
-    "typescript": "4.9.5",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^3.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint src --max-warnings 0"
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +53,19 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "@eslint/css": "^0.9.0",
+    "@poupe/eslint-plugin-tailwindcss": "^0.2.4",
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/react": "^19.2.3",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/parser": "^8.50.0",
+    "@vitejs/plugin-react": "^5.1.2",
+    "eslint": "^9.39.2",
+    "eslint-plugin-better-tailwindcss": "^4.0.0-prettier.1",
+    "gh-pages": "^6.1.1",
+    "tailwind-csstree": "^0.1.4",
+    "tailwindcss": "^4.0.0",
+    "typescript": "5.9.3",
+    "vite": "^7.3.0"
   }
 }

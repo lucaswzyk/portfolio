@@ -1,42 +1,21 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom";
-import withRouter from "../hooks/withRouter";
 import {Home} from "../pages/home";
-import {Gallery} from "../pages/gallery";
-import {ContactUs} from "../pages/contact";
-import {About} from "../pages/about";
 import {LegalNotice} from "../pages/legal";
-import {Socialicons} from "../components/socialicons";
-import {CSSTransition, TransitionGroup} from "react-transition-group";
-
-const AnimatedRoutes = withRouter(({location}) => (
-    <TransitionGroup>
-      <CSSTransition
-          key={location.key}
-          timeout={{
-            enter: 400,
-            exit: 400,
-          }}
-          classNames="page"
-          unmountOnExit
-      >
-        <Routes location={location}>
-          <Route exact path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/gallery" element={<Gallery/>}/>
-          <Route path="/contact" element={<ContactUs/>}/>
-          <Route path="/legal" element={<LegalNotice/>}/>
-          <Route path="*" element={<Home/>}/>
-        </Routes>
-      </CSSTransition>
-    </TransitionGroup>
-));
+import {SocialIcons} from "../components/socialicons";
 
 function AppRoutes() {
   return (
-      <div className="s_c">
-        <AnimatedRoutes/>
-        <Socialicons/>
+      <div className="grow flex flex-col">
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/legal" element={<LegalNotice/>}/>
+          <Route path="*" element={<Home/>}/>
+        </Routes>
+        <SocialIcons
+            vertical
+            className="hidden md:flex fixed left-8 top-1/2 -translate-y-1/2 z-50"
+        />
       </div>
   );
 }

@@ -1,34 +1,30 @@
-.site__header {
-  top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+/* Minimal styles for header - use Aurelius Navbar component */
 
 .menu__button {
-  color: var(--text-color);
+  color: var(--color-gold);
 }
 
 .menu__button:focus,
 .menu__button:hover {
-  color: var(--text-color);
+  color: var(--color-gold);
   box-shadow: unset;
 }
 
 .menu__button svg {
   width: 2em;
   height: 2em;
-  fill: var(--text-color-2);
-  color: var(--text-color-2);
+  fill: var(--color-gold);
+  color: var(--color-gold);
 }
 
 .nav_ac {
   padding: 5px 15px;
   margin: 0;
   border: unset;
-  background: var(--primary-color);
+  background: var(--color-obsidian);
   font-size: 1.25rem;
-  font-family: Marcellus;
-  color: var(--text-color-2);
+  font-family: var(--font-heading);
+  color: var(--color-gold);
   line-height: 2;
   height: 50px;
   font-weight: bold;
@@ -36,7 +32,7 @@
 }
 
 .nav_ac:hover {
-  color: var(--text-color-2);
+  color: var(--color-gold);
 }
 
 .br-top,
@@ -45,7 +41,7 @@
 .br-left {
   position: fixed;
   z-index: 999999;
-  background: var(--primary-color);
+  background: var(--color-obsidian);
 }
 
 .br-top {
@@ -126,7 +122,7 @@
 }
 
 .site__navigation .main__menu_ul li a {
-  color: var(--text-color);
+  color: var(--color-gold);
   display: block;
   font-size: 2.5rem;
   text-decoration: none;
@@ -138,7 +134,7 @@
   top: 0px;
   width: 100%;
   height: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--color-obsidian);
   will-change: transform;
   transform: translateY(-100%);
   transition: 0.5s ease all;
@@ -172,7 +168,7 @@
 }
 
 .the_menu .menu_item > a {
-  color: var(--text-color-2);
+  color: var(--color-gold);
   line-height: 1;
   font-size: 2rem;
   display: inline-block;
@@ -180,11 +176,11 @@
   transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
   padding: 4px 0px;
   text-decoration: none;
-  font-family: Marcellus;
+  font-family: var(--font-heading);
 }
 
 .the_menu .menu_item > a:hover {
-  color: var(--text-color-3);
+  color: var(--color-gold-bright);
 }
 
 @media (min-width: 768px) {
@@ -195,13 +191,13 @@
 
 .menu_footer {
   bottom: 0;
-  font-family: Marcellus;
+  font-family: var(--font-heading);
   font-size: 14px;
-  background: var(--primary-color);
+  background: var(--color-obsidian);
 }
 
 .menu_footer a {
-  color: var(--text-color-2);
+  color: var(--color-gold);
   margin-right: 10px;
   text-decoration: none;
 }

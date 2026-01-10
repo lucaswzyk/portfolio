@@ -1,30 +1,33 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import './style.css';
+import {Button} from '@lukeashford/aurelius';
 
 const LanguageSwitcher = () => {
-  const {t, i18n} = useTranslation();
+  const {i18n} = useTranslation();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     localStorage.setItem('i18nextLng', lng);
   };
 
+  const isLang = (lng) => i18n.language?.startsWith(lng);
+
   return (
-      <div className="language-switcher">
-        <span className="language-label">{t('language_switcher.language')}:</span>
-        <button
-            className={`language-btn ${i18n.language === 'en' ? 'active' : ''}`}
+      <div className="flex items-center gap-2">
+        <Button
+            variant={isLang('en') ? 'primary' : 'outlined'}
+            size="sm"
             onClick={() => changeLanguage('en')}
         >
-          {t('language_switcher.en')}
-        </button>
-        <button
-            className={`language-btn ${i18n.language === 'de' ? 'active' : ''}`}
+          English
+        </Button>
+        <Button
+            variant={isLang('de') ? 'primary' : 'outlined'}
+            size="sm"
             onClick={() => changeLanguage('de')}
         >
-          {t('language_switcher.de')}
-        </button>
+          German
+        </Button>
       </div>
   );
 };

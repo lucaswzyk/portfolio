@@ -1,28 +1,31 @@
 import React from "react";
 import "./style.css";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
+import {Button, Navbar} from "@lukeashford/aurelius";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 
 const Headermain = () => {
-  const { t } = useTranslation();
+  const {t} = useTranslation();
 
   const handleLogoClick = () => {
     window.location.href = "/portfolio";
   };
 
   return (
-    <header className="fixed-top site__header">
-      <div className="d-flex align-items-center justify-content-between">
-        <a
-          href="/portfolio"
-          className="navbar-brand nav_ac"
-          onClick={handleLogoClick}
-        >
-          {t("logotext")}
-        </a>
-        <LanguageSwitcher />
-      </div>
-    </header>
+      <Navbar fixed bordered={false} className="bg-transparent py-2">
+        <div className="flex items-center justify-between w-full">
+          <Button
+              variant="ghost"
+              as="a"
+              href="/portfolio"
+              onClick={handleLogoClick}
+              className="text-xl font-heading text-gold font-bold"
+          >
+            {t("logotext")}
+          </Button>
+          <LanguageSwitcher/>
+        </div>
+      </Navbar>
   );
 };
 

@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import * as emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import "./style.css";
-import {HelmetProvider} from "react-helmet-async";
-import {Alert, Col, Container, Row} from "react-bootstrap";
+import {HelmetProvider} from "@dr.pogodin/react-helmet";
+import {Alert, Col, Container, Input, Row, Textarea} from "@lukeashford/aurelius";
 import {contactConfig, personalInfo} from "../../config_option"; // Import for the contact
                                                                  // configuration and personal info
 import {useTranslation} from "react-i18next";
@@ -69,29 +69,26 @@ export const ContactUs = () => {
 
   return (
       <HelmetProvider>
-        <Container>
-          <Row className="mb-5 mt-3 pt-md-3">
-            <Col lg="12">
-              <h1 className="display-4 mb-4">{t("navigation.contact")}</h1>
-              <hr className="separator-line"/>
+        <Container className="px-4 md:px-16 2xl:px-8">
+          <Row className="mb-5 mt-3 md:pt-3">
+            <Col className="col-span-12">
+              <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.contact")}</h1>
+              <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
-          <Row className="sec_sp">
-            <Col lg="12">
-              <Alert
-                  //show={formData.show}
-                  variant={formData.variant}
-                  className={`rounded-0 co_alert ${
-                      formData.show ? "d-block" : "d-none"
-                  }`}
-                  onClose={() => setFormdata({show: false})}
-                  dismissible
-              >
-                <p className="my-0">{formData.alertmessage}</p>
-              </Alert>
+          <Row className="mb-8">
+            <Col className="col-span-12">
+              {formData.show && (
+                  <Alert
+                      variant={formData.variant === "danger" ? "error" : formData.variant}
+                      className="mb-4"
+                  >
+                    {formData.alertmessage}
+                  </Alert>
+              )}
             </Col>
-            <Col lg="5" className="mb-5">
-              <h3 className="color_sec py-4">
+            <Col className="col-span-12 xl:col-span-5 mb-5">
+              <h3 className="text-gold text-2xl py-4 font-heading">
                 {t("contact.greeting")}
               </h3>
               <address>
@@ -115,12 +112,11 @@ export const ContactUs = () => {
               </address>
               <p>{t("contact.description")}</p>
             </Col>
-            <Col lg="7" className="d-flex align-items-center">
-              <form onSubmit={handleSubmit} className="contact__form w-100">
-                <Row>
-                  <Col lg="6" className="form-group">
-                    <input
-                        className="form-control"
+            <Col className="col-span-12 xl:col-span-7 flex items-center">
+              <form onSubmit={handleSubmit} className="w-full">
+                <Row className="mb-4">
+                  <Col className="col-span-12 xl:col-span-6 mb-4">
+                    <Input
                         id="name"
                         name="name"
                         placeholder={t("contact.form.name")}
@@ -130,9 +126,8 @@ export const ContactUs = () => {
                         onChange={handleChange}
                     />
                   </Col>
-                  <Col lg="6" className="form-group">
-                    <input
-                        className="form-control rounded-0"
+                  <Col className="col-span-12 xl:col-span-6 mb-4">
+                    <Input
                         id="email"
                         name="email"
                         placeholder="Email"
@@ -143,19 +138,18 @@ export const ContactUs = () => {
                     />
                   </Col>
                 </Row>
-                <textarea
-                    className="form-control rounded-0"
+                <Textarea
                     id="message"
                     name="message"
                     placeholder={t("contact.form.message")}
-                    rows="5"
+                    rows={5}
                     value={formData.message}
                     onChange={handleChange}
                     required
-                ></textarea>
-                <br/>
+                    className="mb-4"
+                />
                 <Row>
-                  <Col lg="12" className="form-group text-center">
+                  <Col className="col-span-12 text-center">
                     <Button type="submit">
                       {formData.loading
                           ? t("contact.form.sending")
@@ -167,7 +161,9 @@ export const ContactUs = () => {
             </Col>
           </Row>
         </Container>
-        <div className={formData.loading ? "loading-bar" : "d-none"}></div>
+        {formData.loading && (
+            <div className="fixed top-0 left-0 w-full h-1 bg-gold animate-pulse"></div>
+        )}
       </HelmetProvider>
   );
 };

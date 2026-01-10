@@ -1,16 +1,13 @@
 import React, {useState} from "react";
 import "./style.css";
-import {HelmetProvider} from "react-helmet-async";
-import {Col, Container, Row} from "react-bootstrap";
-import {pics_landscape, pics_portrait} from "../../config_option"; // Import for the image URLs
+import {HelmetProvider} from "@dr.pogodin/react-helmet";
+import {Card, Col, Container, Modal, Row, VideoCard} from "@lukeashford/aurelius";
+import {pics_landscape, pics_portrait, youtube_url} from "../../config_option"; // Import for the
+                                                                                // image URLs
 import {useTranslation} from "react-i18next";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import Dialog from "@mui/material/Dialog";
-import DialogContent from "@mui/material/DialogContent";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
-import ReactPlayer from "react-player";
+import {FiChevronLeft, FiChevronRight} from "react-icons/fi";
 
 export const Gallery = () => {
   const {t} = useTranslation();
@@ -29,46 +26,41 @@ export const Gallery = () => {
 
   return (
       <HelmetProvider>
-        <Container className="About-header">
-          <Row className="mb-5 mt-3 pt-md-3">
-            <Col lg="12">
-              <h1 className="display-4 mb-4">{t("navigation.gallery")}</h1>
-              <hr className="separator-line"/>
+        <Container className="px-4 md:px-16 2xl:px-8">
+          <Row className="mb-5 mt-3 md:pt-3">
+            <Col className="col-span-12">
+              <h1 className="text-4xl mb-4 text-gold font-heading">{t("navigation.gallery")}</h1>
+              <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           {/* YouTube Video Section */}
           <Row className="mb-5">
-            <Col xs="12">
-              <div className="player-wrapper">
-                <ReactPlayer
-                    className="react-player"
-                    url="https://youtu.be/Oe6I6fAhNDw"
-                    width="100%"
-                    height="100%"
-                    controls
-                />
-              </div>
+            <Col className="col-span-12">
+              <VideoCard
+                  src={youtube_url}
+              />
             </Col>
           </Row>
           {/* Separator Line */}
           <Row className="mb-5">
-            <Col lg="12">
-              <hr className="separator-line"/>
+            <Col className="col-span-12">
+              <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           {/* Portrait Images Section */}
-          <Row className="mb-5 po_items_ho portrait-section">
+          <Row className="mb-5">
             {pics_portrait.map((url, i) => (
-                <Col xs={12} sm={6} md={4} key={i}>
+                <Col key={i} className="col-span-12 sm:col-span-6 md:col-span-4">
                   <Card
-                      className="po_item"
+                      className="rounded-none"
+                      interactive
+                      noPadding
                       onClick={() => handleImageClick(i)}
                   >
-                    <CardMedia
-                        component="img"
-                        image={url}
+                    <img
+                        src={url}
                         alt=""
-                        className="card-media portrait-media"
+                        className="w-full h-auto object-cover"
                     />
                   </Card>
                 </Col>
@@ -76,34 +68,36 @@ export const Gallery = () => {
           </Row>
           {/* Separator Line */}
           <Row className="mb-5">
-            <Col lg="12">
-              <hr className="separator-line"/>
+            <Col className="col-span-12">
+              <hr className="border-gold border-t-2"/>
             </Col>
           </Row>
           {/* Landscape Images Section */}
-          <Row className="mb-5 po_items_ho">
+          <Row className="mb-5">
             {pics_landscape.map((url, i) => (
-                <Col xs={12} md={6} key={i}>
-                  <Card className="po_item"
-                        onClick={() => handleImageClick(i + pics_portrait.length)}>
-                    <CardMedia
-                        component="img"
-                        image={url}
+                <Col key={i} className="col-span-12 md:col-span-6">
+                  <Card
+                      className="rounded-none"
+                      interactive
+                      noPadding
+                      onClick={() => handleImageClick(i + pics_portrait.length)}
+                  >
+                    <img
+                        src={url}
                         alt=""
-                        className="card-media landscape-media"
+                        className="w-full h-auto object-cover"
                     />
                   </Card>
                 </Col>
             ))}
           </Row>
-          {/* Image Dialog */}
-          <Dialog
-              open={openDialog}
+          {/* Image Modal */}
+          <Modal
+              isOpen={openDialog}
               onClose={handleCloseDialog}
-              fullWidth
-              maxWidth="lg"
+              className="max-w-6xl"
           >
-            <DialogContent style={{padding: 0, overflow: "hidden"}}>
+            <div className="p-0 overflow-hidden">
               <Carousel
                   selectedItem={selectedImageIndex}
                   showThumbs={false}
@@ -116,29 +110,43 @@ export const Gallery = () => {
                   dynamicHeight={true}
                   showArrows={true}
                   swipeable={true}
-                  style={{height: "100%", width: "100%"}}
+                  className="h-full w-full"
+                  renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                      hasPrev && (
+                          <button
+                              type="button"
+                              onClick={onClickHandler}
+                              title={label}
+                              className="absolute top-1/2 left-4 -translate-y-1/2 z-10 bg-gold/80 hover:bg-gold text-obsidian p-3 rounded-full transition-colors"
+                          >
+                            <FiChevronLeft size={32}/>
+                          </button>
+                      )
+                  }
+                  renderArrowNext={(onClickHandler, hasNext, label) =>
+                      hasNext && (
+                          <button
+                              type="button"
+                              onClick={onClickHandler}
+                              title={label}
+                              className="absolute top-1/2 right-4 -translate-y-1/2 z-10 bg-gold/80 hover:bg-gold text-obsidian p-3 rounded-full transition-colors"
+                          >
+                            <FiChevronRight size={32}/>
+                          </button>
+                      )
+                  }
               >
                 {/* Render all images in carousel */}
                 {pics_portrait.map((url, i) => (
                     <div
                         key={i}
-                        className="portrait-container"
-                        style={{
-                          display: "flex",
-                          justifyContent: "center",
-                          width: "100%"
-                        }}
+                        className="flex justify-center w-full bg-obsidian"
                     >
-                      <div style={{width: "70%", maxWidth: "800px"}}>
+                      <div className="w-9/12 max-w-3xl">
                         <img
                             src={url}
                             alt=""
-                            style={{
-                              maxHeight: "100vh",
-                              width: "100%",
-                              objectFit: "contain",
-                            }}
-                            className="carousel_image"
+                            className="max-h-screen w-full object-contain"
                         />
                       </div>
                     </div>
@@ -148,22 +156,17 @@ export const Gallery = () => {
                       <img
                           src={url}
                           alt=""
-                          style={{
-                            maxHeight: "100vh",
-                            width: "100%",
-                            objectFit: "contain",
-                          }}
-                          className="carousel_image"
+                          className="max-h-screen w-full object-contain"
                       />
                     </div>
                 ))}
               </Carousel>
-            </DialogContent>
-          </Dialog>
+            </div>
+          </Modal>
           {/* Photographer Credit */}
           <Row className="mt-5">
-            <Col lg="12" className="text-center">
-              <p className="photographer-credit">
+            <Col className="col-span-12 text-center">
+              <p className="text-silver">
                 {t("gallery.photographer")}
               </p>
             </Col>
