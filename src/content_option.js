@@ -8,6 +8,7 @@ import {
   pics_landscape,
   pics_portrait,
   socialprofiles,
+  stills_nyc,
 } from "./config_option";
 
 // These exports are deprecated and should be replaced with i18n translations
@@ -16,6 +17,7 @@ export {
   introdata,
   pics_portrait,
   pics_landscape,
+  stills_nyc,
   contactConfig,
   socialprofiles,
 };

@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import "./style.css";
 import {HelmetProvider} from "@dr.pogodin/react-helmet";
-import {Card, Col, Container, Modal, Row, VideoCard} from "@lukeashford/aurelius";
-import {pics_landscape, pics_portrait, youtube_url} from "../../config_option"; // Import for the
-                                                                                // image URLs
+import {Badge, Card, Col, Container, Modal, Row, VideoCard} from "@lukeashford/aurelius";
+import {pics_landscape, pics_portrait, stills_nyc, youtube_url} from "../../config_option"; // Import
+                                                                                            // for
+                                                                                            // the
+// image URLs
 import {useTranslation} from "react-i18next";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
@@ -41,6 +43,63 @@ export const Gallery = () => {
               />
             </Col>
           </Row>
+          {/* New Stills Section */}
+          <Row className="mt-6 md:mt-8 mb-8">
+            <Col className="col-span-12">
+              <Card
+                  variant="featured"
+                  className="relative group overflow-hidden p-8"
+              >
+                {/* Background decoration */}
+                <div
+                    className="absolute top-0 right-0 -mt-16 -mr-16 w-64 h-64 bg-gold/5 rounded-full blur-3xl pointer-events-none group-hover:bg-gold/10 transition-colors duration-500"
+                />
+
+                <div className="relative z-10 space-y-8">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+                    <div className="space-y-4 max-w-2xl">
+                      <Badge
+                          variant="gold"
+                          className="gap-2 px-3 py-1 tracking-widest uppercase"
+                      >
+                        <span className="w-2 h-2 bg-gold rounded-full animate-pulse"/>
+                        {t("stills.badge")}
+                      </Badge>
+
+                      <h2 className="text-3xl font-heading text-white tracking-tight">
+                        {t("stills.title")}
+                      </h2>
+
+                      <div className="text-silver leading-relaxed">
+                        <p>
+                          {t("stills.description")}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <Row className="gap-4 md:gap-6">
+                    {stills_nyc.map((url, i) => (
+                        <Col key={i} className="col-span-12 md:col-span-4">
+                          <Card
+                              className="rounded-none border-ash/30"
+                              interactive
+                              noPadding
+                              onClick={() => handleImageClick(i)}
+                          >
+                            <img
+                                src={url}
+                                alt=""
+                                className="w-full h-auto object-cover"
+                            />
+                          </Card>
+                        </Col>
+                    ))}
+                  </Row>
+                </div>
+              </Card>
+            </Col>
+          </Row>
           {/* Separator Line */}
           <Row className="mb-5">
             <Col className="col-span-12">
@@ -55,7 +114,7 @@ export const Gallery = () => {
                       className="rounded-none"
                       interactive
                       noPadding
-                      onClick={() => handleImageClick(i)}
+                      onClick={() => handleImageClick(i + stills_nyc.length)}
                   >
                     <img
                         src={url}
@@ -80,7 +139,7 @@ export const Gallery = () => {
                       className="rounded-none"
                       interactive
                       noPadding
-                      onClick={() => handleImageClick(i + pics_portrait.length)}
+                      onClick={() => handleImageClick(i + stills_nyc.length + pics_portrait.length)}
                   >
                     <img
                         src={url}
@@ -137,9 +196,23 @@ export const Gallery = () => {
                   }
               >
                 {/* Render all images in carousel */}
+                {stills_nyc.map((url, i) => (
+                    <div
+                        key={`still-${i}`}
+                        className="flex justify-center w-full bg-obsidian"
+                    >
+                      <div className="w-11/12 max-w-5xl">
+                        <img
+                            src={url}
+                            alt=""
+                            className="max-h-screen w-full object-contain"
+                        />
+                      </div>
+                    </div>
+                ))}
                 {pics_portrait.map((url, i) => (
                     <div
-                        key={i}
+                        key={`portrait-${i}`}
                         className="flex justify-center w-full bg-obsidian"
                     >
                       <div className="w-9/12 max-w-3xl">
@@ -152,7 +225,7 @@ export const Gallery = () => {
                     </div>
                 ))}
                 {pics_landscape.map((url, i) => (
-                    <div key={i + pics_portrait.length}>
+                    <div key={`landscape-${i}`}>
                       <img
                           src={url}
                           alt=""
