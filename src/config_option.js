@@ -35,6 +35,11 @@ const pics_landscape = [
 ];
 
 const youtube_url = "https://youtu.be/Oe6I6fAhNDw";
+const stills_nyc = [
+  "https://i.postimg.cc/2yQdR0tP/lucas_new_hair.png",
+  "https://i.postimg.cc/cCR7yFzD/lucas_new_hair2.png",
+  "https://i.postimg.cc/GtFPwXf5/lucas_new_hair3.png"
+];
 
 const contactConfig = {
   YOUR_SERVICE_ID: "service_qupx2vr",
@@ -67,6 +72,7 @@ export {
   introdata,
   pics_portrait,
   pics_landscape,
+  stills_nyc,
   youtube_url,
   contactConfig,
   socialprofiles,

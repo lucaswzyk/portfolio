@@ -302,6 +302,11 @@
   "social": {
     "follow_me": "Follow Me"
   },
+  "stills": {
+    "title": "New Look",
+    "description": "I don't have great new headshots yet (coming soon), but here are three stills with my new look from a movie I just shot in NYC.",
+    "badge": "Update · Short Hair"
+  },
   "gallery": {
     "photographer": "Photos: Birgitta Weizenegger"
   },
